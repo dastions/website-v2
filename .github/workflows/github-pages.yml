@@ -19,11 +19,14 @@ jobs:
           node-version: 18
           cache: 'npm'
 
+      - name: Setup PNPM
+        run: npm install -g pnpm
+
       - name: Install dependencies 📦
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build Vue App ⚡
-        run: npm run build
+        run: pnpm build
 
       - name: List output files 📂
         run: ls -la dist
