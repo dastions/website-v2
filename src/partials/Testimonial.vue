@@ -33,12 +33,6 @@ const channelIcon = (channel) => {
     <header class="flex items-center gap-3 mb-4">
       <img class="shrink-0 rounded-full" :src="props.testimonial.img" width="44" height="44"
         :alt="props.testimonial.name" />
-      <div>
-        <div class="font-bold">{{ props.testimonial.name }}</div>
-        <div>
-          <a class="text-sm font-medium text-gray-500/80 hover:text-gray-500 transition" href="#0">{{ props.testimonial.username }}</a>
-        </div>
-      </div>
     </header>
     <div v-if="props.testimonial.rating" class="inline-flex mb-3">
       <span class="sr-only">Rating is 5 out of 5</span>
@@ -67,8 +61,8 @@ const channelIcon = (channel) => {
       <slot />
     </div>
     <footer class="mt-4 text-gray-700 flex items-center gap-2.5">
-      <div v-html="channelIcon(props.testimonial.channel)"></div>
-      <div class="text-xs">{{ props.testimonial.date }}</div>
+      <div class="font-md">{{ props.testimonial.name }}</div> -
+      <div class="font-md text-blue-500">{{ props.testimonial.company }}</div>
     </footer>
   </article>
 </template>

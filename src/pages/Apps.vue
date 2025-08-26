@@ -20,8 +20,8 @@ import Footer from './../partials/Footer.vue'
       <HeroApps />
       <AppList />
       <CtaAlternative
-        heading="Create your next project with Simple"
-        buttonText="Start Free Trial"
+        heading="Comienza ya a trabajar con nosotros"
+        buttonText="Solicitar Presupuesto"
         buttonLink="#0"
       />  
 

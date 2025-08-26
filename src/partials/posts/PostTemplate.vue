@@ -21,10 +21,11 @@ import PageIllustration from "./PageIllustration.vue"
                 <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
                   to="/blog"><span class="tracking-normal text-blue-300">&lt;-</span> Back To Blog</router-link>
               </div>
-              <h1 class="text-5xl font-bold mb-5">How to migrate to serverless hosting</h1>
+              <h1 class="text-5xl font-bold mb-5">¿Qué debo tener en cuenta a la hora de comprar un detector de Rayos X?
+              </h1>
               <div class="flex items-center gap-3">
-                <img class="rounded-full" src="../images/blog-author-01.jpg" width="32" height="32" alt="Author 01" />
-                <div class="text-sm text-gray-500">Alexandra Moore · <span class="text-gray-700">July 22, 2027</span>
+                <img class="rounded-full" src="../images/albert.jpg" width="32" height="32" alt="Author 01" />
+                <div class="text-sm text-gray-500">Albert Mauri Guiu · <span class="text-gray-700">Mar 21, 2024</span>
                 </div>
               </div>
             </header>
@@ -32,10 +33,9 @@ import PageIllustration from "./PageIllustration.vue"
             <div
               class="prose text-gray-700 max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-a:font-medium prose-a:text-blue-500 prose-a:no-underline hover:prose-a:underline prose-strong:font-medium prose-strong:text-gray-900 prose-code:font-mono prose-code:text-gray-900 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700 prose-headings:scroll-mt-24 prose-blockquote:pl-4 prose-blockquote:xl:-ml-4 prose-blockquote:border-l-2 prose-blockquote:border-gray-300 prose-blockquote:font-medium prose-blockquote:text-gray-900 prose-blockquote:italic">
               <p>
-                In the ever-evolving landscape of technology, one paradigm shift that has garnered significant attention
-                and adoption is serverless computing. Serverless architecture, often misunderstood as the absence of
-                servers, <strong>actually refers to outsourcing server management and maintenance</strong> to a
-                third-party cloud provider.
+                Al considerar la compra de un detector de rayos X para tu fábrica, es importante tener en cuenta varios
+                factores para asegurarte de que el equipo seleccionado satisfaga las necesidades específicas de tu
+                negocio. Aquí hay algunas consideraciones clave:
               </p>
               <p>
                 This innovative approach offers numerous benefits, including scalability, reduced operational overhead,

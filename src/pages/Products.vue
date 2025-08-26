@@ -1,6 +1,6 @@
 <script setup>
 import Header from './../partials/Header.vue'
-import PricingTables from './../partials/PricingTables.vue'
+import ProductTables from './../partials/ProductTables.vue'
 import ComparePlans from './../partials/ComparePlans.vue'
 import TestimonialsGrid from './../partials/TestimonialsGrid.vue'
 import Faqs from './../partials/Faqs.vue'
@@ -18,16 +18,12 @@ import Footer from './../partials/Footer.vue'
     <main class="grow">
 
       <!-- Page sections -->
-      <PricingTables />
-      <ComparePlans />
+      <ProductTables />
+      <!-- <ComparePlans />
       <TestimonialsGrid />
-      <Faqs />
-      <CtaAlternative
-        class="overflow-hidden"
-        heading="Create your next project with Simple"
-        buttonText="Start Free Trial"
-        buttonLink="#0"
-      />       
+      <Faqs /> -->
+      <CtaAlternative heading="Comienza ya a trabajar con nosotros" buttonText="Solicitar Presupuesto"
+        :buttonLink="{ path: '/', hash: '#contact-form' }" />
 
     </main>
 

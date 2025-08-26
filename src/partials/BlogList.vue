@@ -10,12 +10,12 @@ import PageIllustration from "./PageIllustration.vue"
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
       <!-- Main content -->
-      <div class="max-w-3xl mx-auto pt-32 pb-12 md:pt-40 md:pb-20">
+      <div class="max-w-3xl mx-auto pt-32 pb-12 md:pt-26 md:pb-20">
 
         <!-- Section header -->
         <div class="pb-16">
-          <h1 class="text-5xl font-bold mb-4">The Simple blog</h1>
-          <p class="text-lg text-gray-700">Content for developers, product, and digital experts.</p>
+          <h1 class="text-5xl font-bold mb-4">Dastions News</h1>
+          <p class="text-lg text-gray-700">Contenido para desarrolladores, productos y expertos digitales.</p>
         </div>
 
         <!-- Categories -->
@@ -35,180 +35,128 @@ import PageIllustration from "./PageIllustration.vue"
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" src="../images/blog-author-01.jpg" width="24" height="24" alt="Author 01" />
-                <div class="text-sm text-gray-500">Alexandra Moore</div>
+                <img class="rounded-full" src="../images/albert.jpg" width="24" height="24" alt="Author 01" />
+                <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog-post">Simple's system for tracking and validating web
-                  forms</router-link>
+                <router-link class="hover:underline" to="/blog/detectores-de-rayos-x-alimentarios">Comprar Rayos X</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
-              In this blog post, we'll share technical details on how we built this state-of-the-art web form tracking
-              system, and describe how teams at Simple interact with the data quality metrics that underlie our design
-              builder network.
+              ¿Qué debo tener en cuenta a la hora de comprar un detector de Rayos X? Al considerar la compra de un
+              detector de rayos X para tu fábrica, es importante tener en cuenta varios factores para asegurarte de que
+              el equipo seleccionado satisfaga las necesidades específicas de tu negocio.
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog-post">Read more <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/detectores-de-rayos-x-alimentarios">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" src="../images/blog-author-02.jpg" width="24" height="24" alt="Author 02" />
-                <div class="text-sm text-gray-500">Mark Cruppet</div>
+                <img class="rounded-full" src="../images/albert.jpg" width="24" height="24" alt="Author 01" />
+                <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog-post">Introducing AI SDK 3.0 with UI support</router-link>
+                <router-link class="hover:underline" to="/blog/detector-rayos-x">Detectores de Rayos X Alimentarios</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
-              In this blog post, we'll share technical details on how we built this state-of-the-art web form tracking
-              system, and describe how teams at Simple interact with the data quality metrics that underlie our design
-              builder network.
+              ¿Por qué debo instalar un detector de rayos X en mi fábrica? Instalar un detector de rayos X en tu fábrica
+              puede ofrecer una serie de ventajas significativas, especialmente en la industria alimentaria, donde la
+              seguridad y la calidad son de suma importancia.
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog-post">Read more <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/detector-rayos-x">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" src="../images/blog-author-01.jpg" width="24" height="24" alt="Author 01" />
-                <div class="text-sm text-gray-500">Alexandra Moore</div>
+                <img class="rounded-full" src="../images/albert.jpg" width="24" height="24" alt="Author 01" />
+                <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog-post">8 ways to improve feature adoption (includes
-                  strategies)</router-link>
+                <router-link class="hover:underline" to="/blog/data-collection">Software de Recogida de Datos</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
-              In this blog post, we'll share technical details on how we built this state-of-the-art web form tracking
-              system, and describe how teams at Simple interact with the data quality metrics that underlie our design
-              builder network.
+              Catálogo Online Conecta fácilmente tus equipos y empieza a tomar el control de tu planta de producción.
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog-post">Read more <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/data-collection">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" src="../images/blog-author-02.jpg" width="24" height="24" alt="Author 02" />
-                <div class="text-sm text-gray-500">Mark Cruppet</div>
+                <img class="rounded-full" src="../images/albert.jpg" width="24" height="24" alt="Author 01" />
+                <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog-post">How to migrate to serverless hosting</router-link>
+                <router-link class="hover:underline" to="/blog/sector-portuario">Sector Portuario</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
-              In this blog post, we'll share technical details on how we built this state-of-the-art web form tracking
-              system, and describe how teams at Simple interact with the data quality metrics that underlie our design
-              builder network.
+              Software de Control de Pesaje en el Sector Portuario, con Identificación de Matrículas y Expedicion de
+              Documentos.
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog-post">Read more <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/sector-portuario">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" src="../images/blog-author-01.jpg" width="24" height="24" alt="Author 01" />
-                <div class="text-sm text-gray-500">Alexandra Moore</div>
+                <img class="rounded-full" src="../images/albert.jpg" width="24" height="24" alt="Author 01" />
+                <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog-post">Creating a robust platform for documentation with
-                  Simple</router-link>
+                <router-link class="hover:underline" to="/blog/access-control">Control de Accesos</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
-              In this blog post, we'll share technical details on how we built this state-of-the-art web form tracking
-              system, and describe how teams at Simple interact with the data quality metrics that underlie our design
-              builder network.
+              Software de Control de Accesos, con Cámaras de Léctura de Matrículas y Terminales de Pago y Ticketing.
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog-post">Read more <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/access-control">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" src="../images/blog-author-02.jpg" width="24" height="24" alt="Author 02" />
-                <div class="text-sm text-gray-500">Mark Cruppet</div>
+                <img class="rounded-full" src="../images/albert.jpg" width="24" height="24" alt="Author 01" />
+                <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog-post">How Simple helps xWeb manage over 4K sites</router-link>
+                <router-link class="hover:underline" to="/blog/pesaje-automatico">Sistema de Pesaje Automático</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
-              In this blog post, we'll share technical details on how we built this state-of-the-art web form tracking
-              system, and describe how teams at Simple interact with the data quality metrics that underlie our design
-              builder network.
+              Sistemas funcionando con más de 1.500 camiones / día. Optimice su Operación de Pesaje con Nuestro Software
+              de Automatización: Conexión Digital y Sincronización con ERP SAP.
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog-post">Read more <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
-            </footer>
-          </article>
-          <article class="pl-6 sm:pl-10">
-            <header class="mb-2">
-              <div
-                class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" src="../images/blog-author-01.jpg" width="24" height="24" alt="Author 01" />
-                <div class="text-sm text-gray-500">Alexandra Moore</div>
-              </div>
-              <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog-post">Optimizing performance for over 6M monthly visitors</router-link>
-              </h2>
-            </header>
-            <p class="text-gray-700 mb-4">
-              In this blog post, we'll share technical details on how we built this state-of-the-art web form tracking
-              system, and describe how teams at Simple interact with the data quality metrics that underlie our design
-              builder network.
-            </p>
-            <footer>
-              <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog-post">Read more <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
-            </footer>
-          </article>
-          <article class="pl-6 sm:pl-10">
-            <header class="mb-2">
-              <div
-                class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" src="../images/blog-author-02.jpg" width="24" height="24" alt="Author 02" />
-                <div class="text-sm text-gray-500">Mark Cruppet</div>
-              </div>
-              <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog-post">Revolutionizing video editing on the web with
-                  Simple</router-link>
-              </h2>
-            </header>
-            <p class="text-gray-700 mb-4">
-              In this blog post, we'll share technical details on how we built this state-of-the-art web form tracking
-              system, and describe how teams at Simple interact with the data quality metrics that underlie our design
-              builder network.
-            </p>
-            <footer>
-              <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog-post">Read more <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/pesaje-automatico">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
         </div>
 
         <!-- Load more -->
         <div class="text-center mt-12">
-          <button class="btn-sm text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm py-1.5 min-w-[220px]">Load more <span
-              class="tracking-normal text-gray-500 ml-2">↓</span></button>
+          <button class="btn-sm text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm py-1.5 min-w-[220px]">Cargar más
+            <span class="tracking-normal text-gray-500 ml-2">↓</span></button>
         </div>
 
       </div>

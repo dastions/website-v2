@@ -1,9 +1,8 @@
 <script setup>
 import Header from './../partials/Header.vue'
-import HeroCustomers from './../partials/HeroCustomers.vue'
-import WallOfLove from './../partials/WallOfLove.vue'
 import CtaAlternative from './../partials/CtaAlternative.vue'
 import Footer from './../partials/Footer.vue'
+import ServiceTables from '../partials/ServiceTables.vue'
 </script>
 
 <template>
@@ -16,13 +15,9 @@ import Footer from './../partials/Footer.vue'
     <main class="grow">
 
       <!-- Page sections -->
-      <HeroCustomers />
-      <WallOfLove />
-      <CtaAlternative
-        heading="Create your next project with Simple"
-        buttonText="Start Free Trial"
-        buttonLink="#0"
-      />
+      <ServiceTables />
+      <CtaAlternative heading="Comienza ya a trabajar con nosotros" buttonText="Solicitar Presupuesto"
+        :buttonLink="{ path: '/', hash: '#contact-form' }" />
 
     </main>
 

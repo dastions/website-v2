@@ -2,12 +2,12 @@
 import Header from './../partials/Header.vue'
 import HeroHome from './../partials/HeroHome.vue'
 import BusinessCategories from '../partials/BusinessCategories.vue'
-import LargeTestimonial from '../partials/LargeTestimonial.vue'
+/* import LargeTestimonial from '../partials/LargeTestimonial.vue' */
 import FeaturesPlanet from './../partials/FeaturesPlanet.vue'
 import FeaturesHome from './../partials/FeaturesHome.vue'
 import TestimonialsCarousel from './../partials/TestimonialsCarousel.vue'
-import Cta from './../partials/Cta.vue'
 import Footer from './../partials/Footer.vue'
+import Contact from '../partials/Contact.vue'
 </script>
 
 
@@ -22,12 +22,12 @@ import Footer from './../partials/Footer.vue'
 
       <!-- Page sections -->
       <HeroHome />
-      <BusinessCategories />
-      <LargeTestimonial />
+      <!-- <BusinessCategories /> -->
+      <!-- <LargeTestimonial /> -->
       <FeaturesPlanet />
       <FeaturesHome />
-      <TestimonialsCarousel />
-      <Cta />
+      <TestimonialsCarousel data-scrollspy-target id="contact-form" />
+      <Contact />
 
     </main>
 

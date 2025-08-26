@@ -15,12 +15,12 @@
         <div class="py-12 md:py-20 px-4 md:px-12">
           <h2
             class="text-3xl md:text-4xl text-gray-200 font-bold mb-6 md:mb-12 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-700/.7),transparent)1]">
-            Create your next project with Simple</h2>
+            Comienza ya a trabajar con nosotros</h2>
           <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
             <a class="btn text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group"
               href="#0">
               <span class="relative inline-flex items-center">
-                Start Free Trial <span
+                Solicitar Presupuesto <span
                   class="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform ml-1">-&gt;</span>
               </span>
             </a>
