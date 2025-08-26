@@ -20,7 +20,7 @@ jobs:
         run: npm install --frozen-lockfile
 
       - name: Build Vue App ⚡
-        run: npm build
+        run: npm run build
 
       - name: List output files 📂
         run: ls -la dist
@@ -31,4 +31,5 @@ jobs:
           branch: gh-pages
           folder: dist
           clean: true
+
 
