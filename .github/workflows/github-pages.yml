@@ -22,8 +22,8 @@ jobs:
       - name: Build Vue App ⚡
         run: npm run build
 
-      - name: List output files 📂
-        run: ls -la dist
+      - name: Save domain website
+        run: echo "www.dastions.com" >> dist/CNAME
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
@@ -31,5 +31,6 @@ jobs:
           branch: gh-pages
           folder: dist
           clean: true
+
 
 
