@@ -21,7 +21,8 @@ const isAnnual = ref(true)
             class="text-5xl md:text-6xl font-bold mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
             Productos que se adaptan a tus necesidades</h1>
           <div class="max-w-3xl mx-auto">
-            <p class="text-lg text-gray-700">Soluciones flexibles y confiables diseñadas para impulsar el crecimiento de tu negocio.</p>
+            <p class="text-lg text-gray-700">Soluciones flexibles y confiables diseñadas para impulsar el crecimiento de
+              tu negocio.</p>
           </div>
         </div>
 
@@ -99,7 +100,7 @@ const isAnnual = ref(true)
               </ul>
               <div class="mt-6">
                 <a class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full"
-                  href="#0">Sitio Web</a>
+                  href="http://dtm4-website.s3-website.eu-west-3.amazonaws.com/" target="_blank">Sitio Web</a>
               </div>
             </div>
 
@@ -171,7 +172,7 @@ const isAnnual = ref(true)
               </ul>
               <div class="mt-6">
                 <a class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full"
-                  href="#0">Sitio Web</a>
+                  href="https://www.truckandscales.com/" target="_blank">Sitio Web</a>
               </div>
             </div>
 
@@ -235,8 +236,10 @@ const isAnnual = ref(true)
 
               </ul>
               <div class="mt-6">
-                <a class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full"
-                  href="#0">Contactar</a>
+                <RouterLink :to="{ path: '/', hash: '#contact-form' }"
+                  class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full">
+                  Contactar
+                </RouterLink>
               </div>
             </div>
 
@@ -306,8 +309,10 @@ const isAnnual = ref(true)
                 </li>
               </ul>
               <div class="mt-6">
-                <a class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full"
-                  href="#0">Contactar</a>
+                <RouterLink :to="{ path: '/', hash: '#contact-form' }"
+                  class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full">
+                  Contactar
+                </RouterLink>
               </div>
             </div>
 

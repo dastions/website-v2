@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import Products from './pages/Products.vue'
 import Services from './pages/Services.vue'
@@ -13,7 +13,7 @@ import SignIn from './pages/SignIn.vue'
 import SignUp from './pages/SignUp.vue'
 import ResetPassword from './pages/ResetPassword.vue'
 
-const routerHistory = createWebHistory()
+const routerHistory = createWebHashHistory()
 
 const router = createRouter({
   history: routerHistory,
