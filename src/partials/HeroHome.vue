@@ -27,9 +27,9 @@ import PageIllustration from "./PageIllustration.vue"
               class="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
               <div class="relative max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out"
                 data-aos-delay="450">
-                <a class="btn text-gray-800 bg-white hover:bg-gray-50 shadow-sm w-full sm:w-auto" href="/products">
+                <router-link class="btn text-gray-800 bg-white hover:bg-gray-50 shadow-sm w-full sm:w-auto" to="/products">
                   Nuestros Productos
-                </a>
+                </router-link>
                 
                 <router-link to="/contact" class="btn text-white bg-dastions-primary hover:bg-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4">
                   <span class="relative inline-flex items-center">
