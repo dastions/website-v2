@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import Products from './pages/Products.vue'
 import Services from './pages/Services.vue'
@@ -10,13 +10,11 @@ import Post4 from './partials/posts/Post4.vue'
 import Post5 from './partials/posts/Post5.vue'
 import Post6 from './partials/posts/Post6.vue'
 import SignIn from './pages/SignIn.vue'
-import SignUp from './pages/SignUp.vue'
 import ResetPassword from './pages/ResetPassword.vue'
-
-const routerHistory = createWebHashHistory()
+import Contact from './pages/Contact.vue'
 
 const router = createRouter({
-  history: routerHistory,
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', component: Home },
     { path: '/products', component: Products },
@@ -29,23 +27,19 @@ const router = createRouter({
     { path: '/blog/access-control', component: Post5 },
     { path: '/blog/pesaje-automatico', component: Post6 },
     { path: '/signin', component: SignIn },
-    { path: '/contact', component: SignUp },   // 👈 donde estará tu #contact-form
+    { path: '/contact', component: Contact },
     { path: '/reset-password', component: ResetPassword }
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
-      // cuando usas back/forward
       return savedPosition
     }
-
     if (to.hash) {
       return {
         el: to.hash,
         behavior: 'smooth'
       }
     }
-
-    // por defecto: scroll arriba
     return { top: 0 }
   }
 })

@@ -236,7 +236,7 @@ const isAnnual = ref(true)
 
               </ul>
               <div class="mt-6">
-                <RouterLink :to="{ path: '/', hash: '#contact-form' }"
+                <RouterLink to="/contact"
                   class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full">
                   Contactar
                 </RouterLink>
@@ -309,7 +309,7 @@ const isAnnual = ref(true)
                 </li>
               </ul>
               <div class="mt-6">
-                <RouterLink :to="{ path: '/', hash: '#contact-form' }"
+                <RouterLink to="/contact"
                   class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full">
                   Contactar
                 </RouterLink>

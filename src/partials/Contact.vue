@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-26 pb-12 md:pb-20">
       <div
         class="rounded-2xl relative overflow-hidden shadow-xl before:absolute before:inset-0 before:rounded-2xl before:bg-gray-900 before:pointer-events-none before:-z-10"
         data-aos="zoom-y-out">

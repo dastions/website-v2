@@ -70,10 +70,10 @@ onBeforeUnmount(() => {
         <!-- Desktop sign in links -->
         <ul class="flex-1 flex justify-end ">
           <li>
-            <a data-scrollspy-link href="#contact-form"
+            <router-link to="/contact"
               class="btn !text-white px-6 py-2 rounded-lg text-lg font-semibold bg-dastions-primary hover:bg-dastions-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group">
-              Contáctanos
-            </a>
+              Contáctanos 
+            </router-link>
           </li>
         </ul>
 

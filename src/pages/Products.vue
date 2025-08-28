@@ -23,7 +23,7 @@ import Footer from './../partials/Footer.vue'
       <TestimonialsGrid />
       <Faqs /> -->
       <CtaAlternative heading="Comienza ya a trabajar con nosotros" buttonText="Solicitar Presupuesto"
-        :buttonLink="{ path: '/', hash: '#contact-form' }" />
+        buttonLink="/contact" />
 
     </main>
 

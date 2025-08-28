@@ -31,14 +31,14 @@ import PageIllustration from "./PageIllustration.vue"
                   Nuestros Productos
                 </a>
                 
-                <a data-scrollspy-link href="#contact-form" class="btn text-white bg-dastions-primary hover:bg-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4">
+                <router-link to="/contact" class="btn text-white bg-dastions-primary hover:bg-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4">
                   <span class="relative inline-flex items-center">
                     Contáctanos
                     <span class="tracking-normal text-accent group-hover:translate-x-0.5 transition-transform ml-1">
                       -&gt;
                     </span>
                   </span>
-                </a>
+                </router-link>
               </div>
             </div>
           </div>

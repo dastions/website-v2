@@ -86,8 +86,8 @@ import PageIllustration from "./PageIllustration.vue"
               <div class="service-icon text-center">
                 <i class="ti-package orange-icon text-5xl"></i>
               </div>
-              <h3 class="text-xl font-bold mb-1">E-Commerce</h3>
-              <p class="text-md text-gray-600">Creación de tiendas Online para su comercio.</p>
+              <h3 class="text-xl font-bold mb-1">Inteligencia Artificial</h3>
+              <p class="text-md text-gray-600">Gestiona procesos industriales por IA y optimiza puestos de trabajos con nestro Agente Virtual.</p>
             </div>
           </div>
         </div>

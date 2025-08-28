@@ -7,7 +7,7 @@ import FeaturesPlanet from './../partials/FeaturesPlanet.vue'
 import FeaturesHome from './../partials/FeaturesHome.vue'
 import TestimonialsCarousel from './../partials/TestimonialsCarousel.vue'
 import Footer from './../partials/Footer.vue'
-import Contact from '../partials/Contact.vue'
+import CtaAlternative from '../partials/CtaAlternative.vue'
 </script>
 
 
@@ -27,8 +27,8 @@ import Contact from '../partials/Contact.vue'
       <FeaturesPlanet />
       <FeaturesHome />
       <TestimonialsCarousel data-scrollspy-target id="contact-form" />
-      <Contact />
-
+      <CtaAlternative heading="Comienza ya a trabajar con nosotros" buttonText="Solicitar Presupuesto"
+        buttonLink="/contact" />
     </main>
 
     <!-- Site footer -->
