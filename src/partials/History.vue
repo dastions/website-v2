@@ -282,8 +282,5 @@ import PageIllustration from './PageIllustration.vue';
 
         </main>
 
-        <!-- Site footer -->
-        <Footer :border="true" />
-
     </div>
 </template>
