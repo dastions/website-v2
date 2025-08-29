@@ -31,7 +31,7 @@ import PageIllustration from "../PageIllustration.vue"
                     <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
                       to="/blog"><span class="tracking-normal text-blue-300">&lt;-</span> Volver al Blog</router-link>
                   </div>
-                  <h1 class="text-5xl font-bold mb-5" data-scrollspy-target id="consider">¿Qué debo tener en cuenta a la
+                  <h1 id="consider" class="text-5xl font-bold mb-5" data-scrollspy-target>¿Qué debo tener en cuenta a la
                     hora de comprar un detector de Rayos X?
                   </h1>
                   <div class="flex items-center gap-3">
@@ -119,7 +119,7 @@ import PageIllustration from "../PageIllustration.vue"
                   </p>
 
                   <!-- The data-scrollspy-target attribute makes the scrollspy work -->
-                  <h2 data-scrollspy-target id="contact">Contacte con uno de nuestros expertos comerciales:</h2>
+                  <h2 id="contact" data-scrollspy-target>Contacte con uno de nuestros expertos comerciales:</h2>
                     <button
                       class="btn text-white bg-dastions-primary hover:bg-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4"
                       href="#0">

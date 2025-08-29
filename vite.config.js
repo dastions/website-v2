@@ -7,14 +7,15 @@ export default defineConfig({
     'process.env': process.env
   },    
   plugins: [vue()],
-  resolve: {
-    alias: [
-      {
-        find: /^~.+/,
-        replacement: (val) => {
-          return val.replace(/^~/, "");
-        },
-      },
-    ],
-  },
+  base: '/',
+  // resolve: {
+  //   alias: [
+  //     {
+  //       find: /^~.+/,
+  //       replacement: (val) => {
+  //         return val.replace(/^~/, "");
+  //       },
+  //     },
+  //   ],
+  // },
 })
