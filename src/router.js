@@ -12,6 +12,7 @@ import Post6 from './partials/posts/Post6.vue'
 import SignIn from './pages/SignIn.vue'
 import ResetPassword from './pages/ResetPassword.vue'
 import Contact from './pages/Contact.vue'
+import About from './pages/About.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,7 @@ const router = createRouter({
     { path: '/products', component: Products },
     { path: '/services', component: Services },
     { path: '/blog', component: Blog },
+    { path: '/about', component: About },
     { path: '/blog/detectores-de-rayos-x-alimentarios', component: Post1 },
     { path: '/blog/detector-rayos-x', component: Post2 },
     { path: '/blog/data-collection', component: Post3 },

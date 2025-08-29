@@ -32,7 +32,7 @@ import PageIllustration from "../PageIllustration.vue"
                     <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
                       to="/blog"><span class="tracking-normal text-blue-300">&lt;-</span> Volver al Blog</router-link>
                   </div>
-                  <h1 id="consider" class="text-5xl font-bold mb-5" data-scrollspy-target>¿Qué debo tener en cuenta a la
+                  <h1 id="Considerations" class="text-5xl font-bold mb-5" data-scrollspy-target>¿Qué debo tener en cuenta a la
                     hora de comprar un detector de Rayos X?
                   </h1>
                   <div class="flex items-center gap-3">
@@ -150,7 +150,7 @@ import PageIllustration from "../PageIllustration.vue"
                 <ul class="text-sm space-y-2 mt-2">
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#consider' }" class="text-gray-700 hover:text-gray-900">¿Qué debo tener en
+                    <HashLink :to="{ hash: '#considerations' }" class="text-gray-700 hover:text-gray-900">¿Qué debo tener en
                       cuenta?</HashLink>
                   </li>
                   <li>

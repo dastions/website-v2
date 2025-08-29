@@ -61,6 +61,10 @@ onBeforeUnmount(() => {
             </li>
             <li class="px-3 py-1">
               <router-link class="text-gray-700 hover:text-gray-900 flex items-center transition"
+                to="/about">Nosotros</router-link>
+            </li>
+            <li class="px-3 py-1">
+              <router-link class="text-gray-700 hover:text-gray-900 flex items-center transition"
                 to="/blog">Blog</router-link>
             </li>
           </ul>
@@ -72,7 +76,7 @@ onBeforeUnmount(() => {
           <li>
             <router-link to="/contact"
               class="btn !text-white px-6 py-2 rounded-lg text-lg font-semibold bg-dastions-primary hover:bg-dastions-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group">
-              Contáctanos 
+              Contáctanos
             </router-link>
           </li>
         </ul>
@@ -119,6 +123,10 @@ onBeforeUnmount(() => {
                 <li>
                   <router-link class="flex text-gray-700 hover:bg-gray-100 rounded-lg py-1.5 px-2"
                     to="/services">Servicios</router-link>
+                </li>
+                <li>
+                  <router-link class="flex text-gray-700 hover:bg-gray-100 rounded-lg py-1.5 px-2"
+                    to="/about">Nosotros</router-link>
                 </li>
                 <li>
                   <router-link class="flex text-gray-700 hover:bg-gray-100 rounded-lg py-1.5 px-2"
