@@ -22,7 +22,7 @@ import Footer from './../partials/Footer.vue'
         class="overflow-hidden"
         heading="Cannot find what you're looking for?"
         buttonText="Contact Us"
-        buttonLink="#0"
+        button-link="#0"
       />  
 
     </main>

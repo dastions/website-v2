@@ -17,7 +17,7 @@ import ServiceTables from '../partials/ServiceTables.vue'
       <!-- Page sections -->
       <ServiceTables />
       <CtaAlternative heading="Comienza ya a trabajar con nosotros" buttonText="Solicitar Presupuesto"
-        buttonLink="/contact" />
+        button-link="/contact" />
 
     </main>
 

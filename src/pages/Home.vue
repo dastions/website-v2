@@ -28,7 +28,7 @@ import CtaAlternative from '../partials/CtaAlternative.vue'
       <FeaturesHome />
       <TestimonialsCarousel data-scrollspy-target id="contact-form" />
       <CtaAlternative heading="Comienza ya a trabajar con nosotros" buttonText="Solicitar Presupuesto"
-        buttonLink="/contact" />
+        button-link="/contact" /> 
     </main>
 
     <!-- Site footer -->
