@@ -8,14 +8,14 @@ export default defineConfig({
   },    
   plugins: [vue()],
   base: '/',
-  // resolve: {
-  //   alias: [
-  //     {
-  //       find: /^~.+/,
-  //       replacement: (val) => {
-  //         return val.replace(/^~/, "");
-  //       },
-  //     },
-  //   ],
-  // },
+  resolve: {
+    alias: [
+      {
+        find: /^~.+/,
+        replacement: (val) => {
+          return val.replace(/^~/, "");
+        },
+      },
+    ],
+  },
 })
