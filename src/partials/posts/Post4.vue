@@ -1,4 +1,5 @@
 <script setup>
+import HashLink from "../../components/HashLink.vue";
 import Footer from "../Footer.vue";
 import Header from "../Header.vue";
 import PageIllustration from "../PageIllustration.vue"
@@ -112,21 +113,21 @@ import PageIllustration from "../PageIllustration.vue"
                 <ul class="text-sm space-y-2 mt-2">
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#auto">Automatización</a>
+                    <HashLink :to="{ hash: '#auto' }" class="text-gray-700 hover:text-gray-900">Automatización</HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#program">Programa de
-                      camiones</a>
+                    <HashLink :to="{ hash: '#program' }" class="text-gray-700 hover:text-gray-900">Programa de
+                      camiones</HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#version">Versión Cloud o
-                      Versión Local</a>
+                    <HashLink :to="{ hash: '#version' }" class="text-gray-700 hover:text-gray-900">Versión Cloud o
+                      Versión Local</HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#instalation">Podemos Automatizar tu instalación!</a>
+                    <HashLink :to="{ hash: '#instalation' }" class="text-gray-700 hover:text-gray-900">Podemos Automatizar tu instalación!</HashLink>
                   </li>
                 </ul>
               </div>

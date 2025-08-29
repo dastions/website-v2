@@ -1,4 +1,5 @@
 <script setup>
+import HashLink from "../../components/HashLink.vue";
 import Footer from "../Footer.vue";
 import Header from "../Header.vue";
 import PageIllustration from "../PageIllustration.vue"
@@ -149,13 +150,13 @@ import PageIllustration from "../PageIllustration.vue"
                 <ul class="text-sm space-y-2 mt-2">
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#consider">¿Qué debo tener en
-                      cuenta?</a>
+                    <HashLink :to="{ hash: '#consider' }" class="text-gray-700 hover:text-gray-900">¿Qué debo tener en
+                      cuenta?</HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#contact">Contacte con
-                      nuestros expertos.</a>
+                    <HashLink :to="{ hash: '#contact' }" class="text-gray-700 hover:text-gray-900">Contacte con
+                      nuestros expertos.</HashLink>
                   </li>
                 </ul>
               </div>

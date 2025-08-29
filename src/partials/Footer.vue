@@ -35,7 +35,7 @@ const props = defineProps({
               <a class="text-gray-600 hover:text-gray-900 transition" href="https://www.appsmartpay.com/" target="_blank">Terminal de Pago</a>
             </li>
             <li>
-              <a class="text-gray-600 hover:text-gray-900 transition" href="#0">Ingeniería</a>
+              <router-link class="text-gray-600 hover:text-gray-900 transition" to="/services">Ingeniería</router-link>
             </li>
           </ul>
         </div>

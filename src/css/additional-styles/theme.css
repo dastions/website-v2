@@ -1,5 +1,5 @@
-[data-scrollspy-link].scrollspy-active {
-    @apply text-blue-500 font-medium;
+.scrollspy-active {
+  @apply text-blue-500 font-medium;
 }
 
 /* Custom AOS animations */

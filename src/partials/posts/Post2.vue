@@ -1,4 +1,5 @@
 <script setup>
+import HashLink from "../../components/HashLink.vue";
 import Footer from "../Footer.vue";
 import Header from "../Header.vue";
 import PageIllustration from "../PageIllustration.vue"
@@ -31,7 +32,7 @@ import PageIllustration from "../PageIllustration.vue"
                     <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
                       to="/blog"><span class="tracking-normal text-blue-300">&lt;-</span> Volver al Blog</router-link>
                   </div>
-                  <h1 class="text-5xl font-bold mb-5" data-scrollspy-target id="consider">Detectores de Rayos X
+                  <h1 class="text-5xl font-bold mb-5">Detectores de Rayos X
                     Alimentarios</h1>
                   <div class="flex items-center gap-3">
                     <img class="rounded-full" src="../../images/albert.jpg" width="32" height="32" alt="Author 01" />
@@ -86,17 +87,18 @@ import PageIllustration from "../PageIllustration.vue"
                     </li>
                   </ol>
                   <img src="../../images/rayos-x-minebea.png" class="img-fluid" alt="Camion Báscula"
-                    style="margin: 20px">
-                  <button
-                    class="btn text-white bg-dastions-primary hover:bg-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4"
-                    href="#0">
-                    <span class="relative inline-flex items-center">
-                      Ver Rayos X
-                      <span class="tracking-normal text-accent group-hover:translate-x-0.5 transition-transform ml-1">
-                        -&gt;
+                    data-scrollspy-target id="contact" style="margin: 20px">
+                  <router-link to="/contact">
+                    <button
+                      class="btn text-white bg-dastions-primary hover:bg-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4">
+                      <span class="relative inline-flex items-center">
+                        Ver Rayos X
+                        <span class="tracking-normal text-accent group-hover:translate-x-0.5 transition-transform ml-1">
+                          -&gt;
+                        </span>
                       </span>
-                    </span>
-                  </button>
+                    </button>
+                  </router-link>
 
                   <p>En cuanto a las nuevas normativas y exigencias alimentarias, estas pueden variar según la región y
                     el país, pero en general, hay una tendencia hacia regulaciones más estrictas en cuanto a la
@@ -110,7 +112,8 @@ import PageIllustration from "../PageIllustration.vue"
                     <strong>cumplir con las normativas de seguridad</strong> alimentaria, <strong>mejorar la
                       calidad</strong> del producto y proteger la <strong>salud de los consumidores</strong>, lo que a
                     su vez puede beneficiar la <strong>reputación</strong> y el <strong>éxito a largo plazo</strong> de
-                    tu empresa.</p>
+                    tu empresa.
+                  </p>
                 </div>
               </article>
 
@@ -124,12 +127,13 @@ import PageIllustration from "../PageIllustration.vue"
                 <ul class="text-sm space-y-2 mt-2">
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#install">¿Por qué debo instalar un detector de rayos X en mi fábrica?</a>
+                    <HashLink :to="{ hash: '#install' }" class="text-gray-700 hover:text-gray-900">¿Por qué debo
+                      instalar un detector de rayos X en mi fábrica?</HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#contact">Contacte con
-                      nuestros expertos.</a>
+                    <HashLink :to="{ hash: '#contact' }" class="text-gray-700 hover:text-gray-900">Contacte con
+                      nuestros expertos.</HashLink>
                   </li>
                 </ul>
               </div>

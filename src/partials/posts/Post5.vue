@@ -1,4 +1,5 @@
 <script setup>
+import HashLink from "../../components/HashLink.vue";
 import Footer from "../Footer.vue";
 import Header from "../Header.vue";
 import PageIllustration from "../PageIllustration.vue"
@@ -100,16 +101,16 @@ import PageIllustration from "../PageIllustration.vue"
                 <ul class="text-sm space-y-2 mt-2">
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#functions">Funciones
-                      Principales Parking</a>
+                    <HashLink :to="{ hash: '#functions' }" class="text-gray-700 hover:text-gray-900">Funciones
+                      Principales Parking</HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#parking">Parking App</a>
+                    <HashLink :to="{ hash: '#parking' }" class="text-gray-700 hover:text-gray-900">Parking App</HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <a data-scrollspy-link class="text-gray-700 hover:text-gray-900" href="#version">Versión Cloud o Versión Local</a>
+                    <HashLink :to="{ hash: '#version' }" class="text-gray-700 hover:text-gray-900">Versión Cloud o Versión Local</HashLink>
                   </li>
                 </ul>
               </div>

@@ -34,12 +34,17 @@ const router = createRouter({
     if (savedPosition) {
       return savedPosition
     }
+
     if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth'
+      const el = document.querySelector(to.hash)
+      if (el) {
+        const y = el.offsetTop - 80 
+        window.scrollTo({ top: y, behavior: 'smooth' })
+        return 
       }
+      return { top: 0 }
     }
+
     return { top: 0 }
   }
 })
