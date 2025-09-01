@@ -38,7 +38,7 @@ const isAnnual = ref(true)
 
               <div class="mb-4">
                 <div class="font-bold text-center text-blue-500 text-lg mb-2">
-                  Data Collection
+                  Internet Of Things
                 </div>
                 <div
                   class="font-medium text-center text-gray-600 items-baseline pb-4 mb-4 border-b border-gray-200 border-dashed">

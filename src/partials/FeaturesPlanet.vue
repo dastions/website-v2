@@ -19,18 +19,85 @@
                 <img class="absolute z-10 -top-20 -right-64 max-w-none" src="../images/planet-overlay.svg" width="789"
                   height="755" alt="Planet decoration" />
                 <div>
-                  <img
-                    class="absolute z-10 top-16 -left-28 opacity-80 transition-opacity duration-500 animate-[float_4s_ease-in-out_infinite_both]"
-                    src="../images/planet-tag-01.png" width="253" height="56" alt="Tag 01" />
-                  <img
-                    class="absolute z-10 top-7 left-56 opacity-30 transition-opacity duration-500 animate-[float_4s_ease-in-out_infinite_1s_both]"
-                    src="../images/planet-tag-02.png" width="241" height="56" alt="Tag 02" />
-                  <img
-                    class="absolute z-10 bottom-24 -left-20 opacity-25 transition-opacity duration-500 animate-[float_4s_ease-in-out_infinite_2s_both]"
-                    src="../images/planet-tag-03.png" width="243" height="56" alt="Tag 03" />
-                  <img
-                    class="absolute z-10 bottom-32 left-64 opacity-80 transition-opacity duration-500 animate-[float_4s_ease-in-out_infinite_3s_both]"
-                    src="../images/planet-tag-04.png" width="251" height="56" alt="Tag 04" />
+                  <div
+                    class="max-w-sm bg-slate-800 rounded-2xl px-4 py-2.5 flex items-center justify-between shadow-lg absolute z-10 top-16 -left-28 opacity-80 transition-opacity duration-500 animate-[float_4s_ease-in-out_infinite_both]">
+                    <!-- Avatar + texto -->
+                    <div class="flex items-center space-x-3 mr-2">
+                      <img src="../images/customer2.jpg" alt="avatar" class="w-10 h-10 rounded-full">
+                      <div>
+                        <p class="text-white font-semibold">Minebea Intec</p>
+                        <p class="text-gray-400 text-sm">Madrird, Spain</p>
+                      </div>
+                    </div>
+                    <!-- Icono -->
+                    <div class="flex items-center text-blue-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                      <span class="-ml-1 text-lg font-medium leading-none">_</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-72 flex-shrink-0 max-w-sm bg-slate-800 rounded-2xl px-4 py-2.5 flex items-center justify-between shadow-lg absolute z-10 top-7 left-56 opacity-60 transition-opacity duration-500 animate-[float_4s_ease-in-out_infinite_1s_both]">
+                    <!-- Avatar + texto -->
+                    <div class="flex items-center space-x-3 mr-2 min-w-0">
+                      <img src="../images/PORTSURCASTELLON-web.png" alt="avatar" class="w-10 h-10 rounded-full flex-shrink-0">
+                      <div class="min-w-0">
+                        <p class="text-white font-semibold truncate">Portsur Castellón</p>
+                        <p class="text-gray-400 text-sm truncate">Castellón, Spain</p>
+                      </div>
+                    </div>
+                    <!-- Icono -->
+                    <div class="flex items-center text-blue-500 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                      <span class="-ml-1 text-lg font-medium leading-none">_</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="max-w-sm bg-slate-800 rounded-2xl px-4 py-2.5 flex items-center justify-between shadow-lg absolute z-10 bottom-24 -left-20 opacity-45 transition-opacity duration-500 animate-[float_4s_ease-in-out_infinite_2s_both]">
+                    <!-- Avatar + texto -->
+                    <div class="flex items-center space-x-3 mr-2">
+                      <img src="../images/dini-argeo.png" alt="avatar" class="w-10 h-10 rounded-full">
+                      <div>
+                        <p class="text-white font-semibold">Dini Argeo</p>
+                        <p class="text-gray-400 text-sm">Modena, Italy</p>
+                      </div>
+                    </div>
+                    <!-- Icono -->
+                    <div class="flex items-center text-blue-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                      <span class="-ml-1 text-lg font-medium leading-none">_</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-72 flex-shrink-0 max-w-sm bg-slate-800 rounded-2xl px-4 py-2.5 flex items-center justify-between shadow-lg absolute z-10 bottom-32 left-64 opacity-80 transition-opacity duration-500 animate-[float_4s_ease-in-out_infinite_3s_both]">
+                    <!-- Avatar + texto -->
+                    <div class="flex items-center space-x-3 mr-2 min-w-0">
+                      <img src="../images/sissac.jpg" alt="avatar" class="w-10 h-10 rounded-full flex-shrink-0">
+                      <div class="min-w-0">
+                        <p class="text-white font-semibold truncate">Sissac</p>
+                        <p class="text-gray-400 text-sm truncate">Lima , Perú</p>
+                      </div>
+                    </div>
+                    <!-- Icono -->
+                    <div class="flex items-center text-blue-500 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                      <span class="-ml-1 text-lg font-medium leading-none">_</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

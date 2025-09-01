@@ -43,7 +43,7 @@ import PageIllustration from './PageIllustration.vue';
                                 </header>
 
                                 <div
-                                    class="prose text-gray-700 max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-a:font-medium prose-a:text-blue-500 prose-a:no-underline hover:prose-a:underline prose-strong:font-medium prose-strong:text-gray-900 prose-code:font-mono prose-code:text-gray-900 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700 prose-headings:scroll-mt-24 prose-blockquote:pl-4 prose-blockquote:xl:-ml-4 prose-blockquote:border-l-2 prose-blockquote:border-gray-300 prose-blockquote:font-medium prose-blockquote:text-gray-900 prose-blockquote:italic">
+                                    class="prose text-gray-700 max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-a:font-medium prose-a:text-blue-500 prose-a:no-underline prose-strong:font-medium prose-strong:text-gray-900 prose-code:font-mono prose-code:text-gray-900 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700 prose-headings:scroll-mt-24 prose-blockquote:pl-4 prose-blockquote:xl:-ml-4 prose-blockquote:border-l-2 prose-blockquote:border-gray-300 prose-blockquote:font-medium prose-blockquote:text-gray-900 prose-blockquote:italic">
                                     <p>
                                         El bagaje profesional que durante más de 40 años hemos desarrollado en la
                                         familia siempre ha estado ligado a la industria y a grandes compañías, lo que
@@ -115,7 +115,7 @@ import PageIllustration from './PageIllustration.vue';
                                                     Vicenç Parisi Baradad</strong>, experto en ingeniería de
                                                 telecomunicaciones
                                                 y miembro del grupo de investigación <strong>SARTI</strong>&nbsp;
-                                                <a href="https://sarti.webs.upc.edu/web_v2/"
+                                                <a href="https://sarti.webs.upc.edu/web_v2/" class="hover:underline"
                                                     target="_blank">https://sarti.webs.upc.edu/web_v2/</a>
                                             </p>
                                         </li>
@@ -142,11 +142,11 @@ import PageIllustration from './PageIllustration.vue';
                                                 <strong>Colaboraciones Contractuales:</strong> Actualmente, disponemos
                                                 de
                                                 colaboraciones contractuales con empresas del sector de pesaje y
-                                                certificadoras como <a href="https://www.minebea-intec.com/es/"
-                                                    target="_blank">Minebea Intec</a>, <a
-                                                    href="https://www.diniargeo.com/" target="_blank">Dini Argeo</a>, <a
+                                                certificadoras como <a href="https://www.minebea-intec.com/es/" class="hover:underline"
+                                                    target="_blank">Minebea Intec</a>, <a class="hover:underline"
+                                                    href="https://www.diniargeo.com/" target="_blank">Dini Argeo</a>, <a class="hover:underline"
                                                     href="https://www.applus.com/global/es/" target="_blank">Applus+</a>
-                                                y <a href="https://www.ricelake.com/es/" target="_blank">Rice Lake</a>.
+                                                y <a href="https://www.ricelake.com/es/" class="hover:underline" target="_blank">Rice Lake</a>.
                                                 Mantenemos excelentes relaciones con toda su red de partners,
                                                 lo que nos permite ofrecer soluciones de alto nivel respaldadas por
                                                 tecnologías de vanguardia.
@@ -215,11 +215,11 @@ import PageIllustration from './PageIllustration.vue';
                                     </h2>
 
                                     <ul class="enlaces-lista">
-                                        <li><a href="https://www.programapleamar.es/entrevistas/vicenc-parisi-director-del-proyecto-icalpez-el-sistema-disenado-es-capaz-de"
+                                        <li><a class="hover:underline" href="https://www.programapleamar.es/entrevistas/vicenc-parisi-director-del-proyecto-icalpez-el-sistema-disenado-es-capaz-de"
                                                 target="_blank">Entrevista a Vicenç Parisi - iCalpez</a></li>
-                                        <li><a href="https://www.azken.com/blog/caso-de-uso-upc-aplicacion-de-vision-por-computadora-para-la-clasificacion-por-calibres-de-las-especies-pesqueras-a-traves-de-deep-learning/"
+                                        <li><a class="hover:underline" href="https://www.azken.com/blog/caso-de-uso-upc-aplicacion-de-vision-por-computadora-para-la-clasificacion-por-calibres-de-las-especies-pesqueras-a-traves-de-deep-learning/"
                                                 target="_blank">Caso de uso UPC - Clasificación por calibres</a></li>
-                                        <li><a href="https://digipesca.webs.upv.es/" target="_blank">Proyecto
+                                        <li><a class="hover:underline" href="https://digipesca.webs.upv.es/" target="_blank">Proyecto
                                                 Digipesca</a>
                                         </li>
                                     </ul>
