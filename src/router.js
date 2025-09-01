@@ -9,6 +9,7 @@ import Post3 from './partials/posts/Post3.vue'
 import Post4 from './partials/posts/Post4.vue'
 import Post5 from './partials/posts/Post5.vue'
 import Post6 from './partials/posts/Post6.vue'
+import Post7 from './partials/posts/Post7.vue'
 import SignIn from './pages/SignIn.vue'
 import ResetPassword from './pages/ResetPassword.vue'
 import Contact from './pages/Contact.vue'
@@ -28,6 +29,7 @@ const router = createRouter({
     { path: '/blog/sector-portuario', component: Post4 },
     { path: '/blog/access-control', component: Post5 },
     { path: '/blog/pesaje-automatico', component: Post6 },
+    { path: '/blog/monitorizacion-remota', component: Post7 },
     { path: '/signin', component: SignIn },
     { path: '/contact', component: Contact },
     { path: '/reset-password', component: ResetPassword }

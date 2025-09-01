@@ -39,7 +39,8 @@ import PageIllustration from "./PageIllustration.vue"
                 <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog/detectores-de-rayos-x-alimentarios">Comprar Rayos X</router-link>
+                <router-link class="hover:underline" to="/blog/detectores-de-rayos-x-alimentarios">Comprar Rayos
+                  X</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
@@ -49,7 +50,8 @@ import PageIllustration from "./PageIllustration.vue"
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog/detectores-de-rayos-x-alimentarios">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/detectores-de-rayos-x-alimentarios">Leer más <span
+                  class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
@@ -60,7 +62,8 @@ import PageIllustration from "./PageIllustration.vue"
                 <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog/detector-rayos-x">Detectores de Rayos X Alimentarios</router-link>
+                <router-link class="hover:underline" to="/blog/detector-rayos-x">Detectores de Rayos X
+                  Alimentarios</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
@@ -70,7 +73,8 @@ import PageIllustration from "./PageIllustration.vue"
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog/detector-rayos-x">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/detector-rayos-x">Leer más <span
+                  class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
@@ -81,7 +85,8 @@ import PageIllustration from "./PageIllustration.vue"
                 <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog/data-collection">Software de Recogida de Datos</router-link>
+                <router-link class="hover:underline" to="/blog/data-collection">Software de Recogida de
+                  Datos</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
@@ -89,7 +94,8 @@ import PageIllustration from "./PageIllustration.vue"
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog/data-collection">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/data-collection">Leer más <span
+                  class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
@@ -109,7 +115,8 @@ import PageIllustration from "./PageIllustration.vue"
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog/sector-portuario">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/sector-portuario">Leer más <span
+                  class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
@@ -128,7 +135,8 @@ import PageIllustration from "./PageIllustration.vue"
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog/access-control">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/access-control">Leer más <span
+                  class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
           <article class="pl-6 sm:pl-10">
@@ -139,7 +147,8 @@ import PageIllustration from "./PageIllustration.vue"
                 <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
               </div>
               <h2 class="text-2xl font-bold">
-                <router-link class="hover:underline" to="/blog/pesaje-automatico">Sistema de Pesaje Automático</router-link>
+                <router-link class="hover:underline" to="/blog/pesaje-automatico">Sistema de Pesaje
+                  Automático</router-link>
               </h2>
             </header>
             <p class="text-gray-700 mb-4">
@@ -148,7 +157,30 @@ import PageIllustration from "./PageIllustration.vue"
             </p>
             <footer>
               <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
-                to="/blog/pesaje-automatico">Leer más <span class="tracking-normal text-blue-300">-&gt;</span></router-link>
+                to="/blog/pesaje-automatico">Leer más <span
+                  class="tracking-normal text-blue-300">-&gt;</span></router-link>
+            </footer>
+          </article>
+          <article class="pl-6 sm:pl-10">
+            <header class="mb-2">
+              <div
+                class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
+                <img class="rounded-full" src="../images/albert.jpg" width="24" height="24" alt="Author 01" />
+                <div class="text-sm text-gray-500">Albert Mauri Guiu</div>
+              </div>
+              <h2 class="text-2xl font-bold">
+                <router-link class="hover:underline" to="/blog/monitorizacion-remota">Monitorización Remota DASTIONS
+                  NetGuard</router-link>
+              </h2>
+            </header>
+            <p class="text-gray-700 mb-4">
+              Sistema avanzado de monitorización remota de sensores, diseñado para sectores como la industria del
+              pesaje, la agricultura, la construcción, el sector químico y las infraestructuras portuarias.
+            </p>
+            <footer>
+              <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
+                to="/blog/monitorizacion-remota">Leer más <span
+                  class="tracking-normal text-blue-300">-&gt;</span></router-link>
             </footer>
           </article>
         </div>
