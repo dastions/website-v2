@@ -33,7 +33,7 @@ const props = defineProps(['post_date'])
                     <router-link class="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors"
                       to="/blog"><span class="tracking-normal text-blue-300">&lt;-</span> Volver al Blog</router-link>
                   </div>
-                  <h1 class="text-5xl font-bold mb-5" data-scrollspy-target id="monitorizacion">Monitorización Remota
+                  <h1 class="text-5xl font-bold mb-5" data-scrollspy-target id="monitoring">Monitorización Remota
                     DASTIONS
                     NetGuard: Seguridad,
                     Prevención y Control Total
@@ -87,7 +87,7 @@ const props = defineProps(['post_date'])
                     tiempo real.
                   </p>
 
-                  <h2 data-scrollspy-target id="beneficios">¿Qué beneficios aportan los datos medidos?</h2>
+                  <h2 data-scrollspy-target id="benefits">¿Qué beneficios aportan los datos medidos?</h2>
 
                   <p>
                     Los datos recopilados permiten conocer con detalle el estado de cada
@@ -101,7 +101,7 @@ const props = defineProps(['post_date'])
                     mayor seguridad y eficiencia.
                   </p>
 
-                  <h2 data-scrollspy-target id="almacenamiento">¿Dónde se almacenan y cómo se visualizan?</h2>
+                  <h2 data-scrollspy-target id="storage">¿Dónde se almacenan y cómo se visualizan?</h2>
 
                   <p>
                     Todos los valores capturados son enviados de manera segura al
@@ -115,7 +115,7 @@ const props = defineProps(['post_date'])
                     siempre mediante conexión segura.
                   </p>
 
-                  <h2 data-scrollspy-target id="deteccion-de-problemas">¿Cómo se detectan los problemas en la
+                  <h2 data-scrollspy-target id="problem-detection">¿Cómo se detectan los problemas en la
                     instalación?
                   </h2>
 
@@ -128,7 +128,7 @@ const props = defineProps(['post_date'])
                     fallo mayor o un coste inesperado.
                   </p>
 
-                  <h2 data-scrollspy-target id="compatibilidad">¿Es compatible con instalaciones existentes?</h2>
+                  <h2 data-scrollspy-target id="compatibilities">¿Es compatible con instalaciones existentes?</h2>
 
                   <p>
                     Sí. <strong>DASTIONS NetGuard</strong> puede implementarse tanto en
@@ -149,7 +149,7 @@ const props = defineProps(['post_date'])
                     globales para todas las instalaciones sin restricciones.
                   </p>
 
-                  <h2 data-scrollspy-target id="inteligencia-artificial">¿Se puede integrar inteligencia artificial?
+                  <h2 data-scrollspy-target id="ai-integration">¿Se puede integrar inteligencia artificial?
                   </h2>
 
                   <p>
@@ -161,7 +161,7 @@ const props = defineProps(['post_date'])
                     adelantarse a fallos y optimizar aún más los procesos.
                   </p>
 
-                  <h2 data-scrollspy-target id="implementacion">¿La implementación es complicada o costosa?</h2>
+                  <h2 data-scrollspy-target id="implementation">¿La implementación es complicada o costosa?</h2>
 
                   <p>
                     No. Al contrario, su implementación supone un ahorro significativo
@@ -200,7 +200,7 @@ const props = defineProps(['post_date'])
                 <ul class="text-sm space-y-2 mt-2">
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#monitorizacion' }" class="text-gray-700 hover:text-gray-900">Seguridad,
+                    <HashLink :to="{ hash: '#monitoring' }" class="text-gray-700 hover:text-gray-900">Seguridad,
                       Prevención y Control Total</HashLink>
                   </li>
                   <li>
@@ -211,25 +211,25 @@ const props = defineProps(['post_date'])
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#beneficios' }" class="text-gray-700 hover:text-gray-900">¿Qué beneficios
+                    <HashLink :to="{ hash: '#benefits' }" class="text-gray-700 hover:text-gray-900">¿Qué beneficios
                       aportan los datos medidos?
                     </HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#almacenamiento' }" class="text-gray-700 hover:text-gray-900">¿Dónde se
+                    <HashLink :to="{ hash: '#storage' }" class="text-gray-700 hover:text-gray-900">¿Dónde se
                       almacenan y cómo se visualizan?
                     </HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#deteccion-de-problemas' }" class="text-gray-700 hover:text-gray-900">
+                    <HashLink :to="{ hash: '#problem-detection' }" class="text-gray-700 hover:text-gray-900">
                       ¿Cómo se detectan los problemas en la instalación?
                     </HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#compatibilidad' }" class="text-gray-700 hover:text-gray-900">¿Es compatible
+                    <HashLink :to="{ hash: '#compatibilities' }" class="text-gray-700 hover:text-gray-900">¿Es compatible
                       con instalaciones existentes?
                     </HashLink>
                   </li>
@@ -241,13 +241,13 @@ const props = defineProps(['post_date'])
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#inteligencia-artificial' }" class="text-gray-700 hover:text-gray-900">
+                    <HashLink :to="{ hash: '#ai-integration' }" class="text-gray-700 hover:text-gray-900">
                       ¿Se puede integrar inteligencia artificial?
                     </HashLink>
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#implementacion' }" class="text-gray-700 hover:text-gray-900">¿La
+                    <HashLink :to="{ hash: '#implementation' }" class="text-gray-700 hover:text-gray-900">¿La
                       implementación es complicada o costosa?
                     </HashLink>
                   </li>

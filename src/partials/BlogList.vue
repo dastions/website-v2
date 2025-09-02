@@ -77,6 +77,16 @@ const posts = [
     subtitle: "Sistema avanzado de monitorización remota de sensores, diseñado para sectores como la industria del pesaje, la agricultura, la construcción, el sector químico y las infraestructuras portuarias.",
     title_link: "/blog/monitorizacion-remota",
     read_more_link: "/blog/monitorizacion-remota"
+  },
+  {
+    author: "Albert Mauri Guiu",
+    author_image: "../images/albert.jpg",
+    post_date: "Sept 2, 2025",
+    category: "Software",
+    title: "DASTIONS Industrial Agent AI para Básculas de Camiones",
+    subtitle: "Nuestro Industrial Agent AI conecta varias básculas en red, independientemente de su ubicación, y asiste a los choferes mediante voz a través de interfonos adaptados. ",
+    title_link: "/blog/industrial-agent-ai",
+    read_more_link: "/blog/industrial-agent-ai"
   }
 ];
 
@@ -127,12 +137,9 @@ const filteredPosts = computed(() => {
 
         <!-- Categories -->
         <div class="flex flex-wrap gap-2 mb-10">
-          <button
-            v-for="cat in categories"
-            :key="cat"
-            @click="setCategory(cat)"
-            :class="cat === selectedCategory ? 'btn-sm font-normal text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm' : 'btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm'"
-          >{{ cat }}</button>
+          <button v-for="cat in categories" :key="cat" @click="setCategory(cat)"
+            :class="cat === selectedCategory ? 'btn-sm font-normal text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm' : 'btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm'">{{
+            cat }}</button>
         </div>
 
         <!-- Articles -->
@@ -142,7 +149,8 @@ const filteredPosts = computed(() => {
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" :src="getImageUrl(post.author_image)" width="24" height="24" alt="Author 01" />
+                <img class="rounded-full" :src="getImageUrl(post.author_image)" width="24" height="24"
+                  alt="Author 01" />
                 <div class="text-sm text-gray-500">{{ post.author }}</div>
                 <span v-if="post.post_date" class="text-gray-700 text-sm">{{ post.post_date }}</span>
               </div>
@@ -163,7 +171,8 @@ const filteredPosts = computed(() => {
 
         <!-- Load more -->
         <div class="text-center mt-12">
-          <button v-if="visiblePosts < posts.length" @click="showMorePosts" class="btn-sm text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm py-1.5 min-w-[220px]">Cargar más
+          <button v-if="visiblePosts < posts.length" @click="showMorePosts"
+            class="btn-sm text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm py-1.5 min-w-[220px]">Cargar más
             <span class="tracking-normal text-gray-500 ml-2">↓</span></button>
         </div>
 
