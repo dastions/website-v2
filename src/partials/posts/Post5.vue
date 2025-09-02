@@ -86,7 +86,7 @@ import PageIllustration from "../PageIllustration.vue"
                   <p>Podemos Automatizar tu instalación actual sin modificar sus equipos!</p>
 
                   <p><em>Expedicion de Documentos Transporte y Logística</em> <a href="https://www.truckandscales.com"
-                      target="_blank">Para empresas</a>.</p>
+                      target="_blank" class="hover:underline">Para empresas</a>.</p>
 
                 </div>
               </article>

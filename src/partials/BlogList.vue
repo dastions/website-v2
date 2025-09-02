@@ -11,7 +11,7 @@ const posts = [
   {
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
-    post_date: "Mar 21, 2024",
+    post_date: "2024-03-21",
     category: "Productos",
     title: "Comprar Rayos X",
     subtitle: "¿Qué debo tener en cuenta a la hora de comprar un detector de Rayos X? Al considerar la compra de un detector de rayos X para tu fábrica, es importante tener en cuenta varios factores para asegurarte de que el equipo seleccionado satisfaga las necesidades específicas de tu negocio.",
@@ -21,7 +21,7 @@ const posts = [
   {
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
-    post_date: "Mar 20, 2024",
+    post_date: "2024-03-20",
     category: "Productos",
     title: "Detectores de Rayos X Alimentarios",
     subtitle: "¿Por qué debo instalar un detector de rayos X en mi fábrica? Instalar un detector de rayos X en tu fábrica puede ofrecer una serie de ventajas significativas, especialmente en la industria alimentaria, donde la seguridad y la calidad son de suma importancia.",
@@ -31,7 +31,7 @@ const posts = [
   {
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
-    post_date: "Ene 1, 2024",
+    post_date: "2024-01-01",
     category: "Software",
     title: "Software de Recogida de Datos",
     subtitle: "Catálogo Online Conecta fácilmente tus equipos y empieza a tomar el control de tu planta de producción.",
@@ -41,7 +41,7 @@ const posts = [
   {
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
-    post_date: "Ene 1, 2024",
+    post_date: "2024-01-01",
     category: "Software",
     title: "Sector Portuario",
     subtitle: "Software de Control de Pesaje en el Sector Portuario, con Identificación de Matrículas y Expedicion de Documentos.",
@@ -51,7 +51,7 @@ const posts = [
   {
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
-    post_date: "Dic 12, 2023",
+    post_date: "2023-12-12",
     category: "Software",
     title: "Control de Accesos",
     subtitle: "Software de Control de Accesos, con Cámaras de Léctura de Matrículas y Terminales de Pago y Ticketing.",
@@ -61,7 +61,7 @@ const posts = [
   {
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
-    post_date: "Dic 11, 2023",
+    post_date: "2023-12-11",
     category: "Software",
     title: "Sistema de Pesaje Automático",
     subtitle: "Sistemas funcionando con más de 1.500 camiones / día. Optimice su Operación de Pesaje con Nuestro Software de Automatización: Conexión Digital y Sincronización con ERP SAP.",
@@ -71,7 +71,7 @@ const posts = [
   {
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
-    post_date: "Sept 1, 2025",
+    post_date: "2025-09-01",
     category: "Software",
     title: "Monitorización Remota DASTIONS NetGuard",
     subtitle: "Sistema avanzado de monitorización remota de sensores, diseñado para sectores como la industria del pesaje, la agricultura, la construcción, el sector químico y las infraestructuras portuarias.",
@@ -81,7 +81,7 @@ const posts = [
   {
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
-    post_date: "Sept 2, 2025",
+    post_date: "2025-09-02",
     category: "Software",
     title: "DASTIONS Industrial Agent AI para Básculas de Camiones",
     subtitle: "Nuestro Industrial Agent AI conecta varias básculas en red, independientemente de su ubicación, y asiste a los choferes mediante voz a través de interfonos adaptados. ",
@@ -114,9 +114,18 @@ watch(() => route.query.category, (newCat) => {
 })
 
 const filteredPosts = computed(() => {
-  if (selectedCategory.value === 'All') return posts
-  return posts.filter(post => post.category === selectedCategory.value)
+  let arr = selectedCategory.value === 'All' ? posts : posts.filter(post => post.category === selectedCategory.value)
+  return arr.slice().sort((a, b) => b.post_date.localeCompare(a.post_date))
 })
+
+function formatDate(dateStr) {
+  const months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sept", "Oct", "Nov", "Dic"];
+  const d = new Date(dateStr)
+  const day = d.getDate()
+  const month = months[d.getMonth()]
+  const year = d.getFullYear()
+  return `${month} ${day}, ${year}`
+}
 </script>
 
 <template>
@@ -152,7 +161,7 @@ const filteredPosts = computed(() => {
                 <img class="rounded-full" :src="getImageUrl(post.author_image)" width="24" height="24"
                   alt="Author 01" />
                 <div class="text-sm text-gray-500">{{ post.author }}</div>
-                <span v-if="post.post_date" class="text-gray-700 text-sm">{{ post.post_date }}</span>
+                <span v-if="post.post_date" class="text-gray-700 text-sm">{{ formatDate(post.post_date) }}</span>
               </div>
               <h2 class="text-2xl font-bold">
                 <router-link class="hover:underline" :to="post.title_link">{{ post.title }}</router-link>

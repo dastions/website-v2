@@ -97,7 +97,7 @@ import PageIllustration from "../PageIllustration.vue"
 
                   <ul>
                     <li><em>Aplicación de Expedicion de Documentos Transporte y Logística.</em> <strong><a
-                          href="https://www.truckandscales.com" target="_blank">Ver Aplicación</a>.</strong></li>
+                          href="https://www.truckandscales.com" target="_blank" class="hover:underline">Ver Aplicación</a>.</strong></li>
                   </ul>
 
                 </div>
