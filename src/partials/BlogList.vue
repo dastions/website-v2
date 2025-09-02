@@ -1,5 +1,7 @@
 <script setup>
 import PageIllustration from "./PageIllustration.vue"
+import { ref, computed, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
 function getImageUrl(path) {
   return new URL(path, import.meta.url).href;
@@ -10,7 +12,7 @@ const posts = [
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
     post_date: "Mar 21, 2024",
-    category: "Seguridad",
+    category: "Productos",
     title: "Comprar Rayos X",
     subtitle: "¿Qué debo tener en cuenta a la hora de comprar un detector de Rayos X? Al considerar la compra de un detector de rayos X para tu fábrica, es importante tener en cuenta varios factores para asegurarte de que el equipo seleccionado satisfaga las necesidades específicas de tu negocio.",
     title_link: "/blog/detectores-de-rayos-x-alimentarios",
@@ -20,7 +22,7 @@ const posts = [
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
     post_date: "Mar 20, 2024",
-    category: "Seguridad",
+    category: "Productos",
     title: "Detectores de Rayos X Alimentarios",
     subtitle: "¿Por qué debo instalar un detector de rayos X en mi fábrica? Instalar un detector de rayos X en tu fábrica puede ofrecer una serie de ventajas significativas, especialmente en la industria alimentaria, donde la seguridad y la calidad son de suma importancia.",
     title_link: "/blog/detector-rayos-x",
@@ -30,7 +32,7 @@ const posts = [
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
     post_date: "Ene 1, 2024",
-    category: "Seguridad",
+    category: "Software",
     title: "Software de Recogida de Datos",
     subtitle: "Catálogo Online Conecta fácilmente tus equipos y empieza a tomar el control de tu planta de producción.",
     title_link: "/blog/data-collection",
@@ -40,7 +42,7 @@ const posts = [
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
     post_date: "Ene 1, 2024",
-    category: "Seguridad",
+    category: "Software",
     title: "Sector Portuario",
     subtitle: "Software de Control de Pesaje en el Sector Portuario, con Identificación de Matrículas y Expedicion de Documentos.",
     title_link: "/blog/sector-portuario",
@@ -50,7 +52,7 @@ const posts = [
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
     post_date: "Dic 12, 2023",
-    category: "Seguridad",
+    category: "Software",
     title: "Control de Accesos",
     subtitle: "Software de Control de Accesos, con Cámaras de Léctura de Matrículas y Terminales de Pago y Ticketing.",
     title_link: "/blog/access-control",
@@ -60,7 +62,7 @@ const posts = [
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
     post_date: "Dic 11, 2023",
-    category: "Seguridad",
+    category: "Software",
     title: "Sistema de Pesaje Automático",
     subtitle: "Sistemas funcionando con más de 1.500 camiones / día. Optimice su Operación de Pesaje con Nuestro Software de Automatización: Conexión Digital y Sincronización con ERP SAP.",
     title_link: "/blog/pesaje-automatico",
@@ -70,13 +72,41 @@ const posts = [
     author: "Albert Mauri Guiu",
     author_image: "../images/albert.jpg",
     post_date: "Sept 1, 2025",
-    category: "Seguridad",
+    category: "Software",
     title: "Monitorización Remota DASTIONS NetGuard",
     subtitle: "Sistema avanzado de monitorización remota de sensores, diseñado para sectores como la industria del pesaje, la agricultura, la construcción, el sector químico y las infraestructuras portuarias.",
     title_link: "/blog/monitorizacion-remota",
     read_more_link: "/blog/monitorizacion-remota"
-  },
+  }
 ];
+
+const visiblePosts = ref(5)
+const selectedCategory = ref('All')
+const categories = ['All', 'Entrevistas', 'Software', 'Productos']
+const route = useRoute()
+const router = useRouter()
+
+selectedCategory.value = route.query.category || 'All'
+
+function showMorePosts() {
+  visiblePosts.value = Math.min(visiblePosts.value + 5, posts.length)
+}
+
+function setCategory(category) {
+  selectedCategory.value = category
+  visiblePosts.value = 5
+  router.replace({ query: { ...route.query, category: category !== 'All' ? category : undefined } })
+}
+
+watch(() => route.query.category, (newCat) => {
+  selectedCategory.value = newCat || 'All'
+  visiblePosts.value = 5
+})
+
+const filteredPosts = computed(() => {
+  if (selectedCategory.value === 'All') return posts
+  return posts.filter(post => post.category === selectedCategory.value)
+})
 </script>
 
 <template>
@@ -97,18 +127,18 @@ const posts = [
 
         <!-- Categories -->
         <div class="flex flex-wrap gap-2 mb-10">
-          <button class="btn-sm font-normal text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm">All</button>
-          <button class="btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm">Interviews</button>
-          <button class="btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm">Inspiration</button>
-          <button class="btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm">Updates</button>
-          <button class="btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm">Product</button>
-          <button class="btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm">Miscellaneous</button>
+          <button
+            v-for="cat in categories"
+            :key="cat"
+            @click="setCategory(cat)"
+            :class="cat === selectedCategory ? 'btn-sm font-normal text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm' : 'btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm'"
+          >{{ cat }}</button>
         </div>
 
         <!-- Articles -->
         <div
           class="space-y-10 border-l [border-image:linear-gradient(to_bottom,var(--color-slate-200),var(--color-slate-300),transparent)1]">
-          <article v-for="(post, idx) in posts" :key="idx" class="pl-6 sm:pl-10">
+          <article v-for="(post, idx) in filteredPosts.slice(0, visiblePosts)" :key="idx" class="pl-6 sm:pl-10">
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
@@ -133,7 +163,7 @@ const posts = [
 
         <!-- Load more -->
         <div class="text-center mt-12">
-          <button class="btn-sm text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm py-1.5 min-w-[220px]">Cargar más
+          <button v-if="visiblePosts < posts.length" @click="showMorePosts" class="btn-sm text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm py-1.5 min-w-[220px]">Cargar más
             <span class="tracking-normal text-gray-500 ml-2">↓</span></button>
         </div>
 

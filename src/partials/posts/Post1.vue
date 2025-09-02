@@ -121,9 +121,9 @@ import PageIllustration from "../PageIllustration.vue"
 
                   <!-- The data-scrollspy-target attribute makes the scrollspy work -->
                   <h2 id="contact" data-scrollspy-target>Contacte con uno de nuestros expertos comerciales:</h2>
+                  <router-link to="/contact">
                     <button
-                      class="btn text-white bg-dastions-primary hover:bg-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4"
-                      href="#0">
+                      class="btn text-white bg-dastions-primary hover:bg-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4">
                       <span class="relative inline-flex items-center">
                         Formulario
                         <span class="tracking-normal text-accent group-hover:translate-x-0.5 transition-transform ml-1">
@@ -131,6 +131,7 @@ import PageIllustration from "../PageIllustration.vue"
                         </span>
                       </span>
                     </button>
+                  </router-link>
 
                   <p>
                     Instalar un detector de rayos X en tu fábrica puede ayudarte a cumplir con las normativas de
