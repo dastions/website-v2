@@ -3,14 +3,10 @@ import PageIllustration from "./PageIllustration.vue"
 import { ref, computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
-function getImageUrl(path) {
-  return new URL(path, import.meta.url).href;
-}
-
 const posts = [
   {
     author: "Albert Mauri Guiu",
-    author_image: "../images/albert.jpg",
+    author_image: "/images/albert.jpg",
     post_date: "2024-03-21",
     category: "Productos",
     title: "Comprar Rayos X",
@@ -20,7 +16,7 @@ const posts = [
   },
   {
     author: "Albert Mauri Guiu",
-    author_image: "../images/albert.jpg",
+    author_image: "/images/albert.jpg",
     post_date: "2024-03-20",
     category: "Productos",
     title: "Detectores de Rayos X Alimentarios",
@@ -30,7 +26,7 @@ const posts = [
   },
   {
     author: "Albert Mauri Guiu",
-    author_image: "../images/albert.jpg",
+    author_image: "/images/albert.jpg",
     post_date: "2024-01-01",
     category: "Software",
     title: "Software de Recogida de Datos",
@@ -40,7 +36,7 @@ const posts = [
   },
   {
     author: "Albert Mauri Guiu",
-    author_image: "../images/albert.jpg",
+    author_image: "/images/albert.jpg",
     post_date: "2024-01-01",
     category: "Software",
     title: "Sector Portuario",
@@ -50,7 +46,7 @@ const posts = [
   },
   {
     author: "Albert Mauri Guiu",
-    author_image: "../images/albert.jpg",
+    author_image: "/images/albert.jpg",
     post_date: "2023-12-12",
     category: "Software",
     title: "Control de Accesos",
@@ -60,7 +56,7 @@ const posts = [
   },
   {
     author: "Albert Mauri Guiu",
-    author_image: "../images/albert.jpg",
+    author_image: "/images/albert.jpg",
     post_date: "2023-12-11",
     category: "Software",
     title: "Sistema de Pesaje Automático",
@@ -70,7 +66,7 @@ const posts = [
   },
   {
     author: "Albert Mauri Guiu",
-    author_image: "../images/albert.jpg",
+    author_image: "/images/albert.jpg",
     post_date: "2025-09-01",
     category: "Software",
     title: "Monitorización Remota DASTIONS NetGuard",
@@ -80,7 +76,7 @@ const posts = [
   },
   {
     author: "Albert Mauri Guiu",
-    author_image: "../images/albert.jpg",
+    author_image: "/images/albert.jpg",
     post_date: "2025-09-02",
     category: "Software",
     title: "DASTIONS Industrial Agent AI para Básculas de Camiones",
@@ -158,7 +154,7 @@ function formatDate(dateStr) {
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" :src="getImageUrl(post.author_image)" width="24" height="24"
+                <img class="rounded-full" :src="post.author_image" width="24" height="24"
                   alt="Author 01" />
                 <div class="text-sm text-gray-500">{{ post.author }}</div>
                 <span v-if="post.post_date" class="text-gray-700 text-sm">{{ formatDate(post.post_date) }}</span>
