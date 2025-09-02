@@ -3,6 +3,7 @@ import HashLink from "../../components/HashLink.vue";
 import Footer from "../Footer.vue";
 import Header from "../Header.vue";
 import PageIllustration from "../PageIllustration.vue"
+const props = defineProps(['post_date'])
 </script>
 
 <template>
@@ -39,8 +40,7 @@ import PageIllustration from "../PageIllustration.vue"
                   </h1>
                   <div class="flex items-center gap-3">
                     <img class="rounded-full" src="../../images/albert.jpg" width="32" height="32" alt="Author 01" />
-                    <div class="text-sm text-gray-500">Albert Mauri Guiu · <span class="text-gray-700">Sept 1,
-                        2025</span>
+                    <div class="text-sm text-gray-500">Albert Mauri Guiu · <span class="text-gray-700">{{ post_date }}</span>
                     </div>
                   </div>
                 </header>
