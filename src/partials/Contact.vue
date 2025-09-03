@@ -61,20 +61,20 @@
 
             <!-- Columna 2: Formulario -->
             <div class=" rounded-2xl p-6 text-white shadow-lg">
-              <form id="contact-form" class="space-y-4">
-                <input type="text" placeholder="Nombre / Empresa"
+              <form id="contact-form" class="space-y-4" @submit.prevent="sendMail">
+                <input type="text" placeholder="Nombre / Empresa" v-model="name"
                   class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-dastions-primary focus:outline-none"
                   name="name" id="name" required />
 
-                <input type="email" placeholder="Su correo electrónico"
+                <input type="email" placeholder="Su correo electrónico" v-model="email"
                   class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-dastions-primary focus:outline-none"
                   name="email" id="email" required />
 
-                <input type="text" placeholder="Asunto"
+                <input type="text" placeholder="Asunto" v-model="subject"
                   class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-dastions-primary focus:outline-none"
                   name="subject" id="subject" required />
 
-                <textarea rows="4" placeholder="Mensaje"
+                <textarea rows="4" placeholder="Mensaje" v-model="message"
                   class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-dastions-primary focus:outline-none"
                   name="message" id="message" required></textarea>
 
@@ -90,3 +90,17 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const name = ref('')
+const email = ref('')
+const subject = ref('')
+const message = ref('')
+
+function sendMail() {
+  const mailto = `mailto:tienda@dastions.com?subject=${encodeURIComponent(subject.value)}&body=${encodeURIComponent('Nombre/Empresa: ' + name.value + '\nEmail: ' + email.value + '\n\n' + message.value)}`;
+  window.open(mailto, '_blank');
+}
+</script>
