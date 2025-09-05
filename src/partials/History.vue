@@ -1,4 +1,5 @@
 <script setup>
+import KeyCollaborations from './KeyCollaborations.vue';
 import PageIllustration from './PageIllustration.vue';
 </script>
 
@@ -114,56 +115,14 @@ import PageIllustration from './PageIllustration.vue';
               <img src="../images/team/german.jpeg" alt="German" class="rounded-full w-48 h-48 mx-auto mb-4 object-cover" />
               <h3 class="text-xl font-bold mb-2">German</h3>
               <p class="text-gray-600 mb-2">Especialista en Pesaje</p>
-              <p class="text-sm text-gray-500">Colaboración con UPC y partners tecnológicos</p>
+              <p class="text-sm text-gray-500">Relaciones Internacionales y partners tecnológicos</p>
             </div>
           </div>
         </div>
 
         <!-- Key Collaborations -->
-        <div class="mb-16">
-          <h2 class="text-3xl font-bold text-center mb-12">Colaboraciones Estratégicas</h2>
-          
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- UPC Collaboration -->
-            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center">
-              <div class="text-4xl mb-4">🎓</div>
-              <h3 class="text-xl font-bold mb-3">UPC</h3>
-              <p class="text-gray-600 mb-4">Universitat Politècnica de Catalunya</p>
-              <div class="text-sm text-gray-500">
-                <p class="mb-2">• Departamento de Ingeniería Electrónica</p>
-                <p class="mb-2">• Dr. Vicenç Parisi Baradad</p>
-                <p>• Grupo de investigación SARTI</p>
-              </div>
-            </div>
-
-            <!-- Applus+ Collaboration -->
-            <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 text-center">
-              <div class="text-4xl mb-4">🔬</div>
-              <h3 class="text-xl font-bold mb-3">Applus+</h3>
-              <p class="text-gray-600 mb-4">Certificación y Validación</p>
-              <div class="text-sm text-gray-500">
-                <p class="mb-2">• David Cabré Canela</p>
-                <p class="mb-2">• Calidad y eficiencia</p>
-                <p>• Procesos de certificación</p>
-              </div>
-            </div>
-
-            <!-- Technology Partners -->
-            <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 text-center">
-              <div class="text-4xl mb-4">🤖</div>
-              <h3 class="text-xl font-bold mb-3">Partners Tecnológicos</h3>
-              <p class="text-gray-600 mb-4">Tecnologías de Vanguardia</p>
-              <div class="text-sm text-gray-500">
-                <p class="mb-2">• Minebea Intec</p>
-                <p class="mb-2">• Dini Argeo</p>
-                <p>• Rice Lake</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Additional Collaborations -->
-          
-                        </div>
+        <!-- Key Collaborations component -->
+        <KeyCollaborations />
 
         <!-- Vision Statement -->
         <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white">
