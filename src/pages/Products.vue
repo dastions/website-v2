@@ -1,9 +1,6 @@
 <script setup>
 import Header from './../partials/Header.vue'
 import ProductTables from './../partials/ProductTables.vue'
-import ComparePlans from './../partials/ComparePlans.vue'
-import TestimonialsGrid from './../partials/TestimonialsGrid.vue'
-import Faqs from './../partials/Faqs.vue'
 import CtaAlternative from './../partials/CtaAlternative.vue'
 import Footer from './../partials/Footer.vue'
 </script>
@@ -19,9 +16,6 @@ import Footer from './../partials/Footer.vue'
 
       <!-- Page sections -->
       <ProductTables />
-      <!-- <ComparePlans />
-      <TestimonialsGrid />
-      <Faqs /> -->
       <CtaAlternative heading="Comienza ya a trabajar con nosotros" buttonText="Solicitar Presupuesto"
         button-link="/contact" />
 

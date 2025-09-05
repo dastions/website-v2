@@ -11,8 +11,6 @@ import Post5 from './partials/posts/Post5.vue'
 import Post6 from './partials/posts/Post6.vue'
 import Post7 from './partials/posts/Post7.vue'
 import Post8 from './partials/posts/Post8.vue'
-import SignIn from './pages/SignIn.vue'
-import ResetPassword from './pages/ResetPassword.vue'
 import Contact from './pages/Contact.vue'
 import About from './pages/About.vue'
 
@@ -32,9 +30,7 @@ const router = createRouter({
     { path: '/blog/pesaje-automatico', component: Post6 },
     { path: '/blog/monitorizacion-remota', component: Post7 },
     { path: '/blog/industrial-agent-ai', component: Post8 },
-    { path: '/signin', component: SignIn },
     { path: '/contact', component: Contact },
-    { path: '/reset-password', component: ResetPassword }
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

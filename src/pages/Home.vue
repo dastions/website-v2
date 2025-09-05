@@ -1,7 +1,6 @@
 <script setup>
 import Header from './../partials/Header.vue'
 import HeroHome from './../partials/HeroHome.vue'
-import BusinessCategories from '../partials/BusinessCategories.vue'
 /* import LargeTestimonial from '../partials/LargeTestimonial.vue' */
 import FeaturesPlanet from './../partials/FeaturesPlanet.vue'
 import FeaturesHome from './../partials/FeaturesHome.vue'
@@ -22,7 +21,6 @@ import CtaAlternative from '../partials/CtaAlternative.vue'
 
       <!-- Page sections -->
       <HeroHome />
-      <!-- <BusinessCategories /> -->
       <!-- <LargeTestimonial /> -->
       <FeaturesPlanet />
       <FeaturesHome />
