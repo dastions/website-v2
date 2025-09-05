@@ -72,7 +72,13 @@ onBeforeUnmount(() => {
         </nav>
 
         <!-- Desktop sign in links -->
-        <ul class="flex-1 flex justify-end ">
+        <ul class="flex-1 flex justify-end items-center gap-4">
+          <li>
+            <a class="flex justify-center items-center text-gray-600 hover:text-gray-900 transition" href="https://linktr.ee/dastions" target="_blank"
+              aria-label="Linktree">
+              <img src="https://cdn.prod.website-files.com/666255f7f2126f4e8cec6f8f/666b48ad59add9f2777bb76f_download-2.svg" alt="Linktree" width="20" height="20" />
+            </a>
+          </li>
           <li>
             <router-link to="/contact"
               class="btn !text-white px-6 py-2 rounded-lg text-lg font-semibold bg-dastions-primary hover:bg-dastions-secondary shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group">

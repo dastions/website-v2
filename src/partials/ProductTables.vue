@@ -249,13 +249,13 @@ const isAnnual = ref(true)
 
               <div class="mb-4">
                 <div class="font-bold text-center text-blue-500 text-lg mb-2">
-                  PLC 4.0
+                  Agent IA pinecall.io
                 </div>
                 <div
                   class="font-medium text-center text-gray-600 items-baseline pb-4 mb-4 border-b border-gray-200 border-dashed">
-                  Automatización
+                  Inteligencia Artificial
                 </div>
-                <div class="grow text-sm text-gray-700">Soluciones digitales que transforman tu negocio.
+                <div class="grow text-sm text-gray-700">Agentes inteligentes que revolucionan la atención al cliente y automatizan procesos empresariales.
                 </div>
               </div>
               <ul class="text-sm text-gray-500 space-y-2 grow">
@@ -265,7 +265,7 @@ const isAnnual = ref(true)
                     <path
                       d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Consultoría de Software a medida</span>
+                  <span>Agente Digital Trabajador IA</span>
                 </li>
                 <li class="flex items-center">
                   <svg class="w-3 h-3 fill-current text-emerald-500 mr-2 shrink-0" viewBox="0 0 12 12"
@@ -273,7 +273,7 @@ const isAnnual = ref(true)
                     <path
                       d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>App Multiplataforma</span>
+                  <span>OCR Visión Artificial</span>
                 </li>
                 <li class="flex items-center">
                   <svg class="w-3 h-3 fill-current text-emerald-500 mr-2 shrink-0" viewBox="0 0 12 12"
@@ -281,7 +281,7 @@ const isAnnual = ref(true)
                     <path
                       d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>CI & CD con Unit Test</span>
+                  <span>Toma de Decisiones IA</span>
                 </li>
                 <li class="flex items-center">
                   <svg class="w-3 h-3 fill-current text-emerald-500 mr-2 shrink-0" viewBox="0 0 12 12"
@@ -289,7 +289,7 @@ const isAnnual = ref(true)
                     <path
                       d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Modern frameworks</span>
+                  <span>Atención al Cliente 24/7</span>
                 </li>
                 <li class="flex items-center">
                   <svg class="w-3 h-3 fill-current text-emerald-500 mr-2 shrink-0" viewBox="0 0 12 12"
@@ -297,7 +297,7 @@ const isAnnual = ref(true)
                     <path
                       d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Actualizaciones continuas</span>
+                  <span>Automatización de Procesos</span>
                 </li>
                 <li class="flex items-center">
                   <svg class="w-3 h-3 fill-current text-emerald-500 mr-2 shrink-0" viewBox="0 0 12 12"
@@ -309,10 +309,8 @@ const isAnnual = ref(true)
                 </li>
               </ul>
               <div class="mt-6">
-                <RouterLink to="/contact"
-                  class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full">
-                  Contactar
-                </RouterLink>
+                <a class="btn-sm py-1.5 rounded-lg text-white bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:bg-[length:100%_150%] bg-[bottom] shadow-sm w-full"
+                  href="https://pinecall.io" target="_blank">Sitio Web</a>
               </div>
             </div>
 
