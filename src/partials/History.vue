@@ -122,13 +122,15 @@ import PageIllustration from './PageIllustration.vue';
 
         <!-- Key Collaborations -->
         <!-- Key Collaborations component -->
-        <KeyCollaborations />
+        <!-- <KeyCollaborations /> -->
 
         <!-- Vision Statement -->
         <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white">
           <h2 class="text-3xl font-bold mb-4">Nuestra Visión</h2>
           <p class="text-xl mb-6">
-            "Integrar las nuevas tecnologías en la industria, especializándonos en IoT aplicado al pesaje y la ingeniería de adquisición de datos"
+            "Impulsar la evolución del pesaje hacia la era digital mediante soluciones de software innovadoras e integradoras.
+              Socio estratégico aportando valor a fabricantes e instaladores, liderando la digitalización del 
+              pesaje."
           </p>
           <div class="flex justify-center gap-4 text-sm">
             <span class="bg-white/20 px-4 py-2 rounded-full">40+ años de experiencia</span>
