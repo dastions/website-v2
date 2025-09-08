@@ -13,13 +13,13 @@ import PageIllustration from "./PageIllustration.vue"
       <div class="pt-26 pb-12 md:pb-20">
 
         <!-- Section header -->
-        <div class="text-center pb-12 md:pb-16">
+        <div class="text-center pb-8 md:pb-10">
 
           <h1
-            class="text-5xl md:text-6xl font-bold mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]"
+            class="text-6xl md:text-7xl lg:text-8xl font-bold mb-4 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]"
             data-aos="zoom-y-out" data-aos-delay="150">Digital Application <br class="max-lg:hidden" />Solutions</h1>
           <div class="max-w-3xl mx-auto">
-            <p class="text-lg text-gray-700 mb-8" data-aos="zoom-y-out" data-aos-delay="300">Consultoría de Software con
+            <p class="text-lg text-gray-700 mb-6" data-aos="zoom-y-out" data-aos-delay="300">Consultoría de Software con
               soluciones para su empresa.
               Desarrollamos software personalizado, con un resultado profesional adaptado a tus necesidades.
             </p>

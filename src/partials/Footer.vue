@@ -45,7 +45,7 @@ const props = defineProps({
           <h3 class="text-sm font-medium">Company</h3>
           <ul class="text-sm space-y-2">
             <li>
-              <router-link class="text-gray-600 hover:text-gray-900 transition" to="/about">About us</router-link>
+              <router-link class="text-gray-600 hover:text-gray-900 transition" to="/">About us</router-link>
             </li>
             <li>
               <router-link class="text-gray-600 hover:text-gray-900 transition" to="/blog">Blog</router-link>

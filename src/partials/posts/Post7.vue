@@ -3,6 +3,7 @@ import HashLink from "../../components/HashLink.vue";
 import Footer from "../Footer.vue";
 import Header from "../Header.vue";
 import PageIllustration from "../PageIllustration.vue"
+import VideoPlayer from "../VideoPlayer.vue"
 const props = defineProps(['post_date'])
 </script>
 
@@ -62,12 +63,16 @@ const props = defineProps(['post_date'])
                     instalaciones desde cualquier lugar, con datos en tiempo real y la
                     garantía de un sistema seguro, ágil y orientado a la prevención.
                   </p>
-                  <video autoplay loop muted class="w-full h-full object-cover">
-                    <source
-                      src="https://github.com/dastions/dtm_i4_website/raw/240bc09dbb57879ee4b67c88c406111a31bd6c0c/src/images/IMG_0334.MOV"
-                      type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                  </video>
+                  <VideoPlayer 
+                    src="https://github.com/dastions/dtm_i4_website/raw/240bc09dbb57879ee4b67c88c406111a31bd6c0c/src/images/IMG_0334.MOV"
+                    :autoplay="true"
+                    :loop="true"
+                    :muted="true"
+                    :controls="false"
+                    :playsinline="true"
+                    preload="metadata"
+                    className="w-full h-full object-cover rounded-lg shadow-lg"
+                  />
                   <h2 data-scrollspy-target id="netguards">¿Qué es DASTIONS NetGuard?</h2>
 
                   <p>

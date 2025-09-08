@@ -54,7 +54,7 @@ const channelIcon = (channel) => {
         <slot />
       </p>
       <a :href="props.testimonial.videoUrl">   
-        <img class="w-full" :src="props.testimonial.videoThumb" width="312" height="180" alt="View on YouTuobe" />
+        <img class="w-full" :src="props.testimonial.videoThumb" width="312" height="180" alt="View on YouTube" />
       </a>
     </div>
     <div v-else class="grow text-sm text-gray-700">
