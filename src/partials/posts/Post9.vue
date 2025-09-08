@@ -57,6 +57,18 @@ const props = defineProps(['post_date'])
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen class="w-full aspect-video my-8"></iframe>
 
+                  <a href="https://app.appsmartpay.com/" target="_blank" rel="noopener noreferrer">
+                    <button
+                      class="btn text-white bg-amber-400 shadow-sm w-full mb-4 sm:w-auto sm:mb-0 group sm:ml-4">
+                      <span class="relative inline-flex items-center">
+                        Visita AppSmartPay
+                        <span class="tracking-normal text-accent group-hover:translate-x-0.5 transition-transform ml-1">
+                          -&gt;
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+
                   <h2 data-scrollspy-target id="comfort-safety">Para los visitantes: comodidad y seguridad</h2>
 
                   <p>
@@ -137,20 +149,24 @@ const props = defineProps(['post_date'])
                 <ul class="text-sm space-y-2 mt-2">
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#smart-pay' }" class="text-gray-700 hover:text-gray-900">Nueva forma de gestionar el acceso a parking</HashLink>
+                    <HashLink :to="{ hash: '#smart-pay' }" class="text-gray-700 hover:text-gray-900">Nueva forma de
+                      gestionar el acceso a parking</HashLink>
                   </li>
                   <li>
                     <HashLink :to="{ hash: '#comfort-safety' }" class="text-gray-700 hover:text-gray-900">
                       Comodidad y seguridad</HashLink>
                   </li>
                   <li>
-                    <HashLink :to="{ hash: '#control-flexibility' }" class="text-gray-700 hover:text-gray-900">Control y flexibilidad</HashLink>
+                    <HashLink :to="{ hash: '#control-flexibility' }" class="text-gray-700 hover:text-gray-900">Control y
+                      flexibilidad</HashLink>
                   </li>
                   <li>
-                    <HashLink :to="{ hash: '#sustainability' }" class="text-gray-700 hover:text-gray-900">Un paso hacia la sostenibilidad</HashLink>
+                    <HashLink :to="{ hash: '#sustainability' }" class="text-gray-700 hover:text-gray-900">Un paso hacia
+                      la sostenibilidad</HashLink>
                   </li>
                   <li>
-                    <HashLink :to="{ hash: '#agger-la-pertussa' }" class="text-gray-700 hover:text-gray-900">Àger y el Congosto de Mont-rebei</HashLink>
+                    <HashLink :to="{ hash: '#agger-la-pertussa' }" class="text-gray-700 hover:text-gray-900">Àger y el
+                      Congosto de Mont-rebei</HashLink>
                   </li>
                 </ul>
               </div>
