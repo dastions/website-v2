@@ -83,6 +83,16 @@ const posts = [
     subtitle: "Nuestro Industrial Agent AI conecta varias básculas en red, independientemente de su ubicación, y asiste a los choferes mediante voz a través de interfonos adaptados. ",
     title_link: "/blog/industrial-agent-ai",
     read_more_link: "/blog/industrial-agent-ai"
+  },
+  {
+    author: "Albert Mauri Guiu",
+    author_image: "/images/albert.jpg",
+    post_date: "2025-09-08",
+    category: "Software",
+    title: "App Smart Pay Una nueva forma de gestionar el acceso a parking en espacios naturales",
+    subtitle: "En nuestra apuesta por la innovación y la sostenibilidad, hemos desarrollado una aplicación web que facilita la gestión del acceso a parkings en reservas y espacios naturales.",
+    title_link: "/blog/app-smart-pay",
+    read_more_link: "/blog/app-smart-pay"
   }
 ];
 
@@ -144,7 +154,7 @@ function formatDate(dateStr) {
         <div class="flex flex-wrap gap-2 mb-10">
           <button v-for="cat in categories" :key="cat" @click="setCategory(cat)"
             :class="cat === selectedCategory ? 'btn-sm font-normal text-gray-200 bg-gray-800 hover:bg-gray-900 shadow-sm' : 'btn-sm font-normal text-gray-800 bg-white hover:bg-gray-50 shadow-sm'">{{
-            cat }}</button>
+              cat }}</button>
         </div>
 
         <!-- Articles -->
@@ -154,8 +164,7 @@ function formatDate(dateStr) {
             <header class="mb-2">
               <div
                 class="relative flex items-center gap-2 mb-2 before:absolute before:-left-6 sm:before:-left-10 before:-ml-px before:inset-y-0 before:w-px before:bg-blue-500">
-                <img class="rounded-full" :src="post.author_image" width="24" height="24"
-                  alt="Author 01" />
+                <img class="rounded-full" :src="post.author_image" width="24" height="24" alt="Author 01" />
                 <div class="text-sm text-gray-500">{{ post.author }}</div>
                 <span v-if="post.post_date" class="text-gray-700 text-sm">{{ formatDate(post.post_date) }}</span>
               </div>
