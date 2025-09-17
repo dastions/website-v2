@@ -3,6 +3,7 @@ import HashLink from "../../components/HashLink.vue";
 import Footer from "../Footer.vue";
 import Header from "../Header.vue";
 import PageIllustration from "../PageIllustration.vue"
+import VideoPlayer from "../VideoPlayer.vue";
 </script>
 
 <template>
@@ -34,8 +35,6 @@ import PageIllustration from "../PageIllustration.vue"
                   </div>
                   <h1 class="text-5xl font-bold mb-5">Software de Recogida de Datos
                   </h1>
-                  <img src="../../images/data-collection.png" class="img-fluid" alt="Camion Báscula"
-                    style="margin: 20px">
                   <div class="flex items-center gap-3">
                     <img class="rounded-full" src="../../images/albert.jpg" width="32" height="32" alt="Author 01" />
                     <div data-scrollspy-target id="takecontrol" class="text-sm text-gray-500">Albert Mauri Guiu · <span
@@ -48,6 +47,12 @@ import PageIllustration from "../PageIllustration.vue"
                 <div
                   class="prose text-gray-700 max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-a:font-medium prose-a:text-blue-500 prose-a:no-underline prose-strong:font-medium prose-strong:text-gray-900 prose-code:font-mono prose-code:text-gray-900 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700 prose-headings:scroll-mt-24 prose-blockquote:pl-4 prose-blockquote:xl:-ml-4 prose-blockquote:border-l-2 prose-blockquote:border-gray-300 prose-blockquote:font-medium prose-blockquote:text-gray-900 prose-blockquote:italic">
                   <p>Conecta fácilmente tus equipos y empieza a tomar el control de tu planta de producción.</p>
+
+                  <VideoPlayer
+                    src="https://github.com/dastions/dtm_i4_website/raw/240bc09dbb57879ee4b67c88c406111a31bd6c0c/src/images/IMG_0334.MOV"
+                    :autoplay="true" :loop="true" :muted="true" :controls="false" :playsinline="true" preload="metadata"
+                    className="w-full h-full object-cover rounded-lg shadow-lg" />
+                    
                   <p>Software adaptable a tus necesidades, conectamos todos tus equipos.</p>
                   <ul>
                     <li>Informes Legales para Auditorías</li>
@@ -110,7 +115,8 @@ import PageIllustration from "../PageIllustration.vue"
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#functions' }" class="text-gray-700 hover:text-gray-900">Funciones Principales</HashLink>
+                    <HashLink :to="{ hash: '#functions' }" class="text-gray-700 hover:text-gray-900">Funciones
+                      Principales</HashLink>
                   </li>
                 </ul>
               </div>

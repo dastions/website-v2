@@ -41,7 +41,8 @@ const props = defineProps(['post_date'])
                   </h1>
                   <div class="flex items-center gap-3">
                     <img class="rounded-full" src="../../images/albert.jpg" width="32" height="32" alt="Author 01" />
-                    <div class="text-sm text-gray-500">Albert Mauri Guiu · <span class="text-gray-700">{{ post_date }}</span>
+                    <div class="text-sm text-gray-500">Albert Mauri Guiu · <span class="text-gray-700">{{ post_date
+                        }}</span>
                     </div>
                   </div>
                 </header>
@@ -63,16 +64,8 @@ const props = defineProps(['post_date'])
                     instalaciones desde cualquier lugar, con datos en tiempo real y la
                     garantía de un sistema seguro, ágil y orientado a la prevención.
                   </p>
-                  <VideoPlayer 
-                    src="https://github.com/dastions/dtm_i4_website/raw/240bc09dbb57879ee4b67c88c406111a31bd6c0c/src/images/IMG_0334.MOV"
-                    :autoplay="true"
-                    :loop="true"
-                    :muted="true"
-                    :controls="false"
-                    :playsinline="true"
-                    preload="metadata"
-                    className="w-full h-full object-cover rounded-lg shadow-lg"
-                  />
+                  <img src="../../images/data-collection.png" class="img-fluid" alt="Camion Báscula"
+                    style="margin: 20px">
                   <h2 data-scrollspy-target id="netguards">¿Qué es DASTIONS NetGuard?</h2>
 
                   <p>
@@ -234,7 +227,8 @@ const props = defineProps(['post_date'])
                   </li>
                   <li>
                     <!-- The data-scrollspy-link attribute makes the scrollspy work -->
-                    <HashLink :to="{ hash: '#compatibilities' }" class="text-gray-700 hover:text-gray-900">¿Es compatible
+                    <HashLink :to="{ hash: '#compatibilities' }" class="text-gray-700 hover:text-gray-900">¿Es
+                      compatible
                       con instalaciones existentes?
                     </HashLink>
                   </li>
