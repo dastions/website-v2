@@ -54,14 +54,23 @@ const props = defineProps({
         </div>
 
         <!-- 4th block -->
-<!--         <div class="sm:col-span-6 md:col-span-3 lg:col-span-2 space-y-2">
-          <h3 class="text-sm font-medium">Resources</h3>
+        <div class="sm:col-span-6 md:col-span-3 lg:col-span-2 space-y-2">
+          <h3 class="text-sm font-medium">Policies</h3>
           <ul class="text-sm space-y-2">
             <li>
-              <router-link class="text-gray-600 hover:text-gray-900 transition" to="#0">Terms of service</router-link>
+              <router-link class="text-gray-600 hover:text-gray-900 transition" to="/policies/legal-notice">Aviso Legal</router-link>
+            </li>
+            <li>
+              <router-link class="text-gray-600 hover:text-gray-900 transition" to="/policies/privacy-policy">Política de Privacidad</router-link>
+            </li>
+            <li>
+              <router-link class="text-gray-600 hover:text-gray-900 transition" to="/policies/cookies-policy">Política de Cookies</router-link>
+            </li>
+            <li>
+              <router-link class="text-gray-600 hover:text-gray-900 transition" to="/policies/data-protection-policy">Política de Protección de Datos</router-link>
             </li>
           </ul>
-        </div> -->
+        </div> 
 
         <!-- 5th block -->
         <div class="sm:col-span-6 md:col-span-3 lg:col-span-2 space-y-2">

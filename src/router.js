@@ -14,6 +14,10 @@ import Post8 from './partials/posts/Post8.vue'
 import Post9 from './partials/posts/Post9.vue'
 import Contact from './pages/Contact.vue'
 import About from './pages/About.vue'
+import LegalNotice from './partials/policies/LegalNotice.vue'
+import PrivacyPolicy from './partials/policies/PrivacyPolicy.vue'
+import CookiesPolicy from './partials/policies/CookiesPolicy.vue'
+import DataProtectionPolicy from './partials/policies/DataProtectionPolicy.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -33,6 +37,10 @@ const router = createRouter({
     { path: '/blog/industrial-agent-ai', component: Post8 },
     { path: '/blog/app-smart-pay', component: Post9 },
     { path: '/contact', component: Contact },
+    { path: '/policies/legal-notice', component: LegalNotice },
+    { path: '/policies/privacy-policy', component: PrivacyPolicy },
+    { path: '/policies/cookies-policy', component: CookiesPolicy },
+    { path: '/policies/data-protection-policy', component: DataProtectionPolicy },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
