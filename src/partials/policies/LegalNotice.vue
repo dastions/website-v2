@@ -72,7 +72,7 @@ import PageIllustration from "../PageIllustration.vue"
                   <p><strong>Denominación social:</strong> DIGITAL APPLICATION SOLUTIONS SL</p>
                   <p><strong>NIF:</strong> B72926538</p>
                   <p><strong>Domicilio social:</strong> Calle Pi i Maragall 10, Esc. A, Baix 2a - 43007 Tarragona</p>
-                  <p><strong>Teléfono:</strong> 620717157</p>
+                  <p><strong>Teléfono:</strong> 977131206</p>
                   <p>
                     <strong>E-mail:</strong>
                     <span class="text-blue-500">
