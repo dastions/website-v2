@@ -1,17 +1,440 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="https://www.dastions.com/plugins/themify-icons/themify-icons.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dastions.com</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DASTIONS | Software industrial, IA de pesaje y logística | Digital Application Solutions</title>
+<meta name="description" content="Consultoría de software y soluciones digitales para la industria: software a medida, integración ERP, IoT, ciberseguridad y agente de voz con IA para pesaje y logística de camiones. Cuatro generaciones en el sector del pesaje industrial.">
+<meta name="theme-color" content="#0f2436">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://www.dastions.com/">
+<link rel="alternate" hreflang="es" href="https://www.dastions.com/">
+<link rel="alternate" hreflang="ca" href="https://www.dastions.com/ca/">
+<link rel="alternate" hreflang="en" href="https://www.dastions.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.dastions.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DASTIONS | Digital Application Solutions">
+<meta property="og:description" content="Software industrial a medida, integración ERP e IA de pesaje y logística. Cuatro generaciones de innovación en pesaje industrial.">
+<meta property="og:locale" content="es_ES">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Dastions - Digital Application Solutions S.L.","url":"https://www.dastions.com/","email":"info@dastions.com","telephone":"+34977131206","address":{"@type":"PostalAddress","addressLocality":"Tarragona","addressRegion":"Catalonia","addressCountry":"ES"},"description":"Consultoría de software y soluciones digitales para la industria: software a medida, IoT, ciberseguridad e IA de pesaje y logística.","sameAs":["https://www.linkedin.com/company/dastions/","https://github.com/dastions","https://www.youtube.com/@dastions"]}
+</script>
 </head>
+<body class="page-home">
 
-<body class="font-inter antialiased bg-gray-50 text-gray-900 tracking-tight">
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="Dastions.com - Inicio"><img src="img/dastions.png" alt="Dastions.com" class="brand__logo"></a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>    </nav>
+    <div class="langsel">
+      <button class="langsel__btn" type="button" aria-label="Idioma / Language" aria-haspopup="true" aria-expanded="false"><span class="flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none"><rect width="3" height="2" fill="#c60b1e"/><rect y=".5" width="3" height="1" fill="#ffc400"/></svg></span><span>ES</span><svg class="langsel__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="langsel__menu" role="menu">
+        <a href="index.html" class="is-active" role="menuitem"><span class="flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none"><rect width="3" height="2" fill="#c60b1e"/><rect y=".5" width="3" height="1" fill="#ffc400"/></svg></span> Español</a>
+        <a href="en/index.html" role="menuitem"><span class="flag"><svg viewBox="0 0 60 30" preserveAspectRatio="none"><rect width="60" height="30" fill="#012169"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/><path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"/></svg></span> English</a>
+      </div>
+    </div>
+    <button class="nav__toggle" aria-label="Menú" aria-expanded="false"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<!-- HERO SLIDER (4 productos destacados, rota cada 5s) -->
+<section class="hero hero--slider" aria-label="Productos destacados">
+
+  <div class="hero__slide is-active">
+    <div class="hero__bg"><video class="hero__vid" autoplay muted loop playsinline preload="auto"><source src="img/fotos/dtm4.mp4" type="video/mp4"></video></div>
+    <div class="wrap hero__inner">
+      <span class="eyebrow eyebrow--light">Lo que hacemos · Producción</span>
+      <h1 class="h1">Controlamos tu planta en tiempo real</h1>
+      <p class="lead">Recogida de datos, alertas y análisis con Data Collection DTM 4.0 para que decidas con la información al instante.</p>
+      <div class="hero__cta"><a href="http://dtm4-website.s3-website.eu-west-3.amazonaws.com/" target="_blank" rel="noopener" class="btn btn--primary">Descubre más <span class="arrow">→</span></a></div>
+    </div>
+  </div>
+
+  <div class="hero__slide">
+    <div class="hero__bg"><video class="hero__vid" muted loop playsinline preload="none"><source src="img/fotos/truck-slide.mp4" type="video/mp4"></video></div>
+    <div class="wrap hero__inner">
+      <span class="eyebrow eyebrow--light">Lo que hacemos · Logística</span>
+      <h1 class="h1">Digitalizamos el pesaje de camiones</h1>
+      <p class="lead">Pesaje automático, accesos y documentación en la nube con Truck &amp; Scales. Sin papeleo y sin colas.</p>
+      <div class="hero__cta"><a href="https://www.truckandscales.com/" target="_blank" rel="noopener" class="btn btn--primary">Descubre más <span class="arrow">→</span></a></div>
+    </div>
+  </div>
+
+  <div class="hero__slide">
+    <div class="hero__bg"><video class="hero__vid" muted loop playsinline preload="none"><source src="img/fotos/montaje-slide.mp4" type="video/mp4"></video></div>
+    <div class="wrap hero__inner">
+      <span class="eyebrow eyebrow--light">Lo que hacemos · Ingeniería</span>
+      <h1 class="h1">Montamos tu báscula de camiones</h1>
+      <p class="lead">Diseño, obra civil, montaje y puesta en marcha de básculas puente para el pesaje de camiones. Proyecto llave en mano, con la máxima precisión y calibración.</p>
+      <div class="hero__cta"><a href="contacto.html" class="btn btn--primary" data-bascula-contact>Solicitar presupuesto <span class="arrow">→</span></a></div>
+    </div>
+  </div>
+
+  <div class="hero__slide">
+    <div class="hero__bg"><video class="hero__vid" muted loop playsinline preload="none"><source src="img/fotos/smartpay-slide.mp4" type="video/mp4"></video></div>
+    <div class="wrap hero__inner">
+      <span class="eyebrow eyebrow--light">Lo que hacemos · Pagos con tarjeta</span>
+      <h1 class="h1">Cobramos sin efectivo con SmartPay</h1>
+      <p class="lead">Terminales de pago con tarjeta para parkings, accesos y control en cualquier ubicación. Sin efectivo y sin colas.</p>
+      <div class="hero__cta"><a href="https://www.appsmartpay.com/" target="_blank" rel="noopener" class="btn btn--primary">Descubre más <span class="arrow">→</span></a></div>
+    </div>
+  </div>
+
+  <div class="hero__slide">
+    <div class="hero__bg"><video class="hero__vid" muted loop playsinline preload="none"><source src="img/fotos/seguridad-slide.mp4" type="video/mp4"></video></div>
+    <div class="wrap hero__inner">
+      <span class="eyebrow eyebrow--light">Lo que hacemos · Seguridad</span>
+      <h1 class="h1">Protegemos tus sistemas y tus datos</h1>
+      <p class="lead">Consultoría, pentesting y análisis de vulnerabilidades para blindar toda tu operación.</p>
+      <div class="hero__cta"><a href="productos.html" class="btn btn--primary">Descubre más <span class="arrow">→</span></a></div>
+    </div>
+  </div>
+
+  <div class="hero__dots" role="tablist" aria-label="Ir al producto">
+    <button class="hero__dot is-active" data-i="0" aria-label="Data Collection DTM 4.0"></button>
+    <button class="hero__dot" data-i="1" aria-label="Truck &amp; Scales"></button>
+    <button class="hero__dot" data-i="2" aria-label="Montaje de básculas de camiones"></button>
+    <button class="hero__dot" data-i="3" aria-label="SmartPay"></button>
+    <button class="hero__dot" data-i="4" aria-label="Seguridad"></button>
+  </div>
+</section>
+
+<!-- LOGOS CLIENTES -->
+<div class="logos">
+  <div class="wrap">
+    <p>Trabajamos con clientes alrededor de todo el mundo</p>
+    <div class="logos__row">
+      <span class="lg"><img src="img/logos/tight/minebea.png" alt="Minebea Intec" loading="lazy"></span>
+      <span class="lg"><img src="img/logos/tight/portsur.png" alt="Portsur Castellón" loading="lazy"></span>
+      <span class="lg"><img src="img/logos/tight/portcastello.png" alt="PortCastelló - Puerto de Castellón" loading="lazy"></span>
+      <span class="lg"><img src="img/logos/tight/dini-argeo.png" alt="Dini Argeo" loading="lazy"></span>
+      <span class="lg"><img src="img/logos/tight/rice-lake.png" alt="Rice Lake Weighing Systems" loading="lazy"></span>
+      <span class="lg"><img src="img/logos/tight/saint-gobain.png" alt="Saint-Gobain" loading="lazy"></span>
+      <span class="lg lg--big30"><img src="img/logos/tight/cliente-new.png" alt="Nutrion" loading="lazy"></span>
+      <span class="lg"><img src="img/logos/tight/schmidt.png" alt="Schmidt Ibérica" loading="lazy"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ASESORAMIENTO / EXPERIENCIA -->
+<section class="trust">
+  <div class="wrap">
+    <div class="trust__top">
+      <div class="reveal reveal--left">
+        <span class="ed__eyebrow">Asesoramiento experto</span>
+        <h2 class="h2">40 años en el sector del pesaje industrial</h2>
+      </div>
+      <div class="reveal reveal--right">
+        <p class="lead">Ponemos cuatro décadas de experiencia al servicio de fabricantes, instaladores y clientes finales. Te acompañamos en cada proyecto con criterio técnico, cercanía y la seguridad de quien conoce el sector desde dentro.</p>
+      </div>
+    </div>
+    <div class="trust__stats">
+      <div class="trust__stat reveal"><b data-count="40" data-suffix="+">40+</b><span>años de experiencia en el pesaje</span></div>
+      <div class="trust__stat reveal d1"><b data-count="4">4</b><span>generaciones de tradición familiar</span></div>
+      <div class="trust__stat reveal d2"><b data-count="100" data-suffix="%">100%</b><span>soporte técnico y compromiso</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO SPLIT -->
+<section class="section">
+  <div class="wrap">
+    <div class="ed__grid">
+      <div class="ed__media reveal">
+        <div class="ed__frame" aria-hidden="true"></div>
+        <img class="ed__main" src="img/fotos/soluciones-industria.jpg" alt="Operario de Dastions en una línea de pesaje y paletizado industrial">
+        <img class="ed__sub" src="img/fotos/soluciones-industria-2.jpg" alt="Detalle de una instalación de pesaje industrial de Dastions" loading="lazy">
+        <div class="ed__badge"><b>40+</b><span>años de experiencia<br>en el pesaje industrial</span></div>
+      </div>
+      <div class="ed__body reveal reveal--right">
+        <span class="ed__eyebrow">Consultoría de software</span>
+        <h2 class="h2">Soluciones digitales para la industria</h2>
+        <p class="lead">Nuestra misión es ofrecer a nuestros clientes servicios especializados, propuestas innovadoras y soluciones integrales de software, con un resultado profesional adaptado a cada necesidad.</p>
+        <p>Un equipo experto que transforma los procesos del pesaje, la logística y la producción en oportunidades de digitalización, eficiencia y crecimiento.</p>
+        <p class="ed__cta"><a href="contacto.html" class="btn btn--primary">Contactar <span class="arrow">→</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS / GRAN GRUPO -->
+<section class="section section--soft">
+  <div class="wrap">
+    <div class="ed__grid ed__grid--rev">
+      <div class="ed__body reveal reveal--left">
+        <span class="ed__eyebrow">Colaboraciones estratégicas</span>
+        <h2 class="h2">Formamos parte de un gran ecosistema</h2>
+        <p class="lead">Somos partner tecnológico de los fabricantes líderes del pesaje industrial y colaboramos con universidades y certificadoras.</p>
+        <p>No solo cuentas con un equipo experto en software, pesaje e inteligencia artificial, sino también con el respaldo de las marcas de referencia del sector y de la investigación aplicada.</p>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span><b>Partners tecnológicos:</b> Minebea Intec, Dini Argeo, Rice Lake y Coop Bilanciai.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span><b>I+D:</b> universidades y el grupo de investigación SARTI.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span><b>Certificación:</b> Applus+, calidad y validación de procesos.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span><b>Calibración y verificación:</b> laboratorio colaborador acreditado ENAC.</span></li>
+        </ul>
+      </div>
+      <div class="ed__media reveal">
+        <div class="ed__frame" aria-hidden="true"></div>
+        <img class="ed__main" src="img/fotos/partners.png" alt="Línea de pesaje industrial con indicador Rice Lake instalada por Dastions">
+        <img class="ed__sub" src="img/fotos/partners-2.jpg" alt="Instalación de pesaje industrial de Dastions con equipos de fabricantes partner" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS (scards con imagen) -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Nuestros productos</span>
+      <h2 class="h2">Plataformas listas para tu sector</h2>
+      <p class="lead">Soluciones flexibles y confiables diseñadas para impulsar el crecimiento de tu negocio.</p>
+    </div>
+    <div class="platgrid">
+
+      <div class="platcard reveal">
+        <span class="platcard__bg" style="background-image:url('img/fotos/dtm-a.jpg')"></span>
+        <div class="platcard__head"><span class="platcard__cat">Data Collection DTM 4.0</span><span class="platcard__sub">Internet of Things · Producción</span></div>
+        <p>Empieza a tomar el control de tu planta de producción.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Más de 100 GB de disco</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Gestión de alertas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Análisis de datos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Informes de producción</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Control de calidad</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Soporte técnico incluido</li>
+        </ul>
+        <a href="http://dtm4-website.s3-website.eu-west-3.amazonaws.com/" target="_blank" rel="noopener" class="btn btn--primary">Sitio web <span class="arrow">→</span></a>
+      </div>
+
+      <div class="platcard reveal d1">
+        <span class="platcard__bg" style="background-image:url('img/fotos/truck-b.jpg')"></span>
+        <div class="platcard__head"><span class="platcard__cat">Truck &amp; Scales</span><span class="platcard__sub">Logística</span></div>
+        <p>Digitaliza el futuro de la logística y el transporte.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Plataforma de documentación online</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Pesaje automático</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Accesos / expediciones / logística</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Backup</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Más de 2.000 transacciones / día</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Soporte técnico incluido</li>
+        </ul>
+        <a href="https://www.truckandscales.com/" target="_blank" rel="noopener" class="btn btn--primary">Sitio web <span class="arrow">→</span></a>
+      </div>
+
+      <div class="platcard reveal d2">
+        <span class="platcard__bg" style="background-image:url('img/fotos/silos-a.webp')"></span>
+        <div class="platcard__head"><span class="platcard__cat">Silos 360</span><span class="platcard__sub">Monitorización IoT</span></div>
+        <p>Visibilidad remota del nivel, volumen y stock de tus silos y depósitos.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Mapa de ubicaciones con el estado de cada silo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Alertas: nivel bajo, sin comunicación o batería</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Históricos, tendencias y estimación de autonomía</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Priorización automática de reposiciones</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>API abierta para ERP y BI</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Soporte técnico incluido</li>
+        </ul>
+        <a href="https://silos360.com/" target="_blank" rel="noopener" class="btn btn--primary">Sitio web <span class="arrow">→</span></a>
+      </div>
+
+      <div class="platcard reveal d3">
+        <span class="platcard__bg" style="background-image:url('img/fotos/acceso-b.jpg')"></span>
+        <div class="platcard__head"><span class="platcard__cat">Control de accesos</span><span class="platcard__sub">Accesos y parking</span></div>
+        <p>Automatiza la entrada y salida de vehículos.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Lector de matrículas (OCR / ANPR) con cámaras</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Acceso por código QR y tarjetas RFID</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Registro y gestión de usuarios y abonados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Barreras, cámaras y tótems automatizados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Parking y control de accesos para camiones</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Soporte técnico incluido</li>
+        </ul>
+        <a href="https://www.appsmartpay.com/" target="_blank" rel="noopener" class="btn btn--primary">Sitio web <span class="arrow">→</span></a>
+      </div>
+
+      <div class="platcard platcard--blue reveal d4">
+        <div class="platcard__head"><span class="platcard__cat">Ciberseguridad</span><span class="platcard__sub">Informática</span></div>
+        <p>Soluciones de seguridad adaptadas a tus proyectos.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Consultoría de seguridad</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>P.E.M. Testing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Estudio de vulnerabilidades</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Seguridad de protocolos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Soporte técnico incluido</li>
+        </ul>
+        <a href="contacto.html" class="btn btn--dark">Contactar <span class="arrow">→</span></a>
+      </div>
+
+      <div class="platcard platcard--blue reveal d3">
+        <div class="platcard__head"><span class="platcard__cat">Agente IA industrial</span><span class="platcard__sub">Inteligencia Artificial · I+D con la UPC</span></div>
+        <p>Agentes inteligentes que revolucionan la atención al cliente y automatizan procesos empresariales.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Agente digital trabajador IA</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>OCR y visión artificial</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Toma de decisiones con IA</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Atención al cliente 24/7</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Automatización de procesos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Soporte técnico incluido</li>
+        </ul>
+        <a href="contacto.html" class="btn btn--primary">Más información <span class="arrow">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRACIÓN: EQUIPOS DE CAMPO + ERP -->
+<section class="section section--soft">
+  <div class="wrap">
+    <div class="sec-head sec-head--wide">
+      <span class="eyebrow">Integración</span>
+      <h2 class="h2">Integramos tus equipos de campo con tu ERP</h2>
+      <p class="lead">Conectamos tus equipos de pesaje y control de planta con tu ERP y enviamos sus datos en tiempo real. Aprovechamos la infraestructura que ya tienes y la integramos con SAP, Navision, Oracle, Sage o Transkal, sin sustituir tus equipos.</p>
+    </div>
+
+    <div class="eqgrid">
+      <div class="eq reveal">
+        <div class="eq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 4h13v11H1z"/><path d="M14 8h4l3 3v4h-7z"/><circle cx="5.5" cy="18" r="2"/><circle cx="18.5" cy="18" r="2"/></svg></div>
+        <h3>Básculas de camiones</h3>
+        <p>Pesaje de vehículos, expediciones y albaranes digitalizados.</p>
+      </div>
+      <div class="eq reveal d1">
+        <div class="eq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Detectores de metales</h3>
+        <p>Control de calidad y seguridad alimentaria trazable.</p>
+      </div>
+      <div class="eq reveal d2">
+        <div class="eq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17h18M6 17V9l6-4 6 4v8"/><path d="M12 5v12"/></svg></div>
+        <h3>Pesadoras en continuo</h3>
+        <p>Checkweighers: control de peso en línea de producción.</p>
+      </div>
+      <div class="eq reveal d3">
+        <div class="eq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 3h16l-6 8v7l-4 2v-9z"/></svg></div>
+        <h3>Dosificadoras</h3>
+        <p>Dosificación y formulación con registro automático.</p>
+      </div>
+      <div class="eq reveal d4">
+        <div class="eq__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20V7l9-4 9 4v13"/><path d="M3 20h18M9 20v-6h6v6"/></svg></div>
+        <h3>Control de accesos</h3>
+        <p>Entradas, salidas y trazabilidad de cada operación.</p>
+      </div>
+    </div>
+
+    <div class="erp-connect reveal">
+      <div class="erp-connect__arrow" aria-hidden="true"></div>
+      <span class="erp-connect__label">Todo integrado en tu ERP</span>
+      <div class="erp-row">
+        <span>SAP</span>
+        <span>Navision</span>
+        <span>Oracle</span>
+        <span>Sage</span>
+        <span>Transkal</span>
+      </div>
+      <p class="ed__cta" style="margin-top:2rem"><a href="contacto.html" class="btn btn--dark" data-erp-contact>Conectar mis equipos <span class="arrow">→</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- BANDA VIDEOS CASOS DE EXITO -->
+<section class="vidband vidband--3" aria-label="Casos de éxito en vídeo">
+  <video class="vidband__v" muted loop playsinline preload="none"><source src="img/fotos/caso-josims.mp4" type="video/mp4"></video>
+  <video class="vidband__v" muted loop playsinline preload="none"><source src="img/fotos/caso-portsur.mp4" type="video/mp4"></video>
+  <video class="vidband__v" muted loop playsinline preload="none"><source src="img/fotos/caso-3.mp4" type="video/mp4"></video>
+</section>
+
+<!-- VENTAJAS (split con foto) -->
+<section class="section">
+  <div class="wrap">
+    <div class="ed__grid">
+      <div class="ed__media reveal">
+        <div class="ed__frame" aria-hidden="true"></div>
+        <img class="ed__main" src="img/fotos/ventaja-1.jpg" alt="Equipo de Dastions trabajando en una instalación de pesaje industrial">
+        <img class="ed__sub" src="img/fotos/ventaja-2.jpg" alt="Detalle de una solución de pesaje de Dastions en campo" loading="lazy">
+      </div>
+      <div class="ed__body reveal reveal--right">
+        <span class="ed__eyebrow">Por qué DASTIONS</span>
+        <h2 class="h2">La ventaja de un socio que conoce la industria</h2>
+        <p class="lead">Un siglo de conocimiento del pesaje, ahora convertido en software.</p>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span><b>Código a medida</b> que se adapta a tu planta, no al revés.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span><b>Integración con SAP, Navision, Oracle, Sage y Transkal</b> sin duplicar trabajo.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span><b>Soporte técnico incluido</b> y acompañamiento experto.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span><b>Multiplataforma y multiidioma</b> para operar en cualquier mercado.</span></li>
+        </ul>
+        <p class="ed__cta"><a href="servicios.html" class="btn btn--primary">Nuestros servicios <span class="arrow">→</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section section--soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Trabajan con nosotros</span>
+      <h2 class="h2">La confianza de la industria</h2>
+    </div>
+  </div>
+  <div class="marquee" aria-label="Testimonios de clientes">
+    <div class="marquee__track">
+      <div class="testi"><div class="testi__stars">★★★★★</div><p>"Estamos trabajando con Dastions para conectar más equipos de Minebea."</p><div class="testi__who"><span class="testi__av">M</span><div><b>España</b><span>Minebea Intec</span></div></div></div>
+      <div class="testi"><div class="testi__stars">★★★★★</div><p>"Aquí en UK la conexión del software a nuestras máquinas nos ha facilitado la vida al departamento de Calidad."</p><div class="testi__who"><span class="testi__av">R</span><div><b>Rosana</b><span>UK Fruits</span></div></div></div>
+      <div class="testi"><div class="testi__stars">★★★★★</div><p>"Este software me ha dado herramientas comerciales para ganar ofertas en muchos clientes."</p><div class="testi__who"><span class="testi__av">J</span><div><b>José Manuel</b><span>Pack Spain</span></div></div></div>
+      <div class="testi"><div class="testi__stars">★★★★★</div><p>"He conectado detectores de metales y pesadoras en continuo de 3 marcas distintas en un solo aplicativo."</p><div class="testi__who"><span class="testi__av">V</span><div><b>Veerle Larson</b><span>Prinso</span></div></div></div>
+      <div class="testi"><div class="testi__stars">★★★★★</div><p>"Es facilísimo hablar con Dastions para cualquier necesidad que te facilite la vida."</p><div class="testi__who"><span class="testi__av">A</span><div><b>Anna Prats</b><span>Cloud Inc</span></div></div></div>
+      <div class="testi"><div class="testi__stars">★★★★★</div><p>"Auditorías pasadas con éxito y clientes contentos."</p><div class="testi__who"><span class="testi__av">A</span><div><b>Ana Kennedy</b><span>Syntax Inc</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband reveal">
+  <div class="wrap">
+    <h2 class="h2">Comienza ya a trabajar con nosotros</h2>
+    <p>Contáctanos y descubre cómo nuestras soluciones pueden transformar tu negocio.</p>
+    <a href="contacto.html" class="btn btn--light">Solicitar presupuesto <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="brand"><img src="img/dastions.png" alt="Dastions.com" class="brand__logo"></a>
+        <p>Digital Application Solutions S.L. Software industrial, integración ERP e inteligencia artificial para el pesaje y la logística.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul><li><a href="index.html">Inicio</a></li><li><a href="productos.html">Productos</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+      </div>
+      <div>
+        <h4>Proyectos</h4>
+        <ul><li><a href="https://www.truckandscales.com/" target="_blank" rel="noopener">Truck &amp; Scales</a></li><li><a href="https://www.appsmartpay.com/" target="_blank" rel="noopener">Terminal de Pago</a></li><li><a href="https://linktr.ee/dastions" target="_blank" rel="noopener">Linktree</a></li></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul><li><a href="mailto:info@dastions.com">info@dastions.com</a></li><li><a href="tel:+34977131206">+34 977 13 12 06</a></li><li><a href="https://api.whatsapp.com/send?phone=34620717157" target="_blank" rel="noopener">WhatsApp</a></li><li>Tarragona, Cataluña, España</li></ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Digital Application Solutions S.L. · Dastions.com</span>
+      <span><a href="legal.html#aviso">Aviso legal</a> · <a href="legal.html#privacidad">Privacidad</a> · <a href="legal.html#cookies">Cookies</a></span>
+    </div>
+  </div>
+  <div class="footer__wm" aria-hidden="true">Dastions</div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
-
 </html>
