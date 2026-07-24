@@ -1,4 +1,4 @@
-# Simple Vue
+# Simple Vue 2
 
 Vue.js landing page template designed by Cruip.
 
