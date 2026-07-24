@@ -311,6 +311,13 @@
   var L = function (es, en) { return EN ? en : es; };
   var opts = function (arr) { return arr.map(function (v) { return '<option>' + v + '</option>'; }).join(''); };
   var chips = function (name, arr) { return arr.map(function (v) { return '<label class="chip"><input type="checkbox" name="' + name + '" value="' + v + '"><span>' + v + '</span></label>'; }).join(''); };
+  // Campos de configuración de FormSubmit (los datos se envían a info@dastions.com)
+  var fsHidden = function (subject) {
+    return '<input type="hidden" name="_subject" value="' + subject + '">' +
+      '<input type="hidden" name="_template" value="table">' +
+      '<input type="hidden" name="_captcha" value="false">' +
+      '<input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">';
+  };
 
   var rgpd = '<label class="check"><input type="checkbox" required><span>' + L('He leído y acepto la política de privacidad y el tratamiento de mis datos para responder a esta solicitud.', 'I have read and accept the privacy policy and the processing of my data in order to respond to this request.') + '</span></label>';
   var mailNote = '<p style="font-size:.86rem;color:var(--muted);margin:1.1rem 0 0">' + L('¿Prefieres el correo? ', 'Prefer email? ') + '<a href="mailto:info@dastions.com" style="color:var(--brand-dd);font-weight:600">info@dastions.com</a></p>';
@@ -320,7 +327,8 @@
   var general = buildModal(L('Solicita tu presupuesto', 'Request your quote'),
     '<span class="eyebrow">' + L('Contacto', 'Contact') + '</span>' +
     '<h2 class="h3" style="margin:.3rem 0 1.3rem">' + L('Solicita tu presupuesto', 'Request your quote') + '</h2>' +
-    '<form action="https://formspree.io/f/[FORMSPREE_ID]" method="POST">' +
+    '<form action="https://formsubmit.co/info@dastions.com" method="POST">' +
+      fsHidden(L('Nueva solicitud de presupuesto — Dastions.com', 'New quote request — Dastions.com')) +
       '<div class="row2">' +
         '<div class="field"><label for="cm-nombre">' + LB_NAME + '</label><input id="cm-nombre" name="nombre" type="text" required autocomplete="name"></div>' +
         '<div class="field"><label for="cm-empresa">' + LB_COMP + '</label><input id="cm-empresa" name="empresa" type="text" autocomplete="organization"></div>' +
@@ -343,7 +351,8 @@
     '<span class="eyebrow">' + L('Integración ERP', 'ERP integration') + '</span>' +
     '<h2 class="h3" style="margin:.3rem 0 .5rem">' + L('Conecta tus equipos con tu ERP', 'Connect your equipment with your ERP') + '</h2>' +
     '<p style="color:var(--muted);font-size:.92rem;margin:0 0 1.3rem">' + L('Cuéntanos qué equipos quieres integrar y con qué ERP trabajas. Te preparamos una propuesta a medida.', 'Tell us which equipment you want to integrate and which ERP you work with. We\'ll prepare a tailor-made proposal.') + '</p>' +
-    '<form action="https://formspree.io/f/[FORMSPREE_ID]" method="POST">' +
+    '<form action="https://formsubmit.co/info@dastions.com" method="POST">' +
+      fsHidden(L('Integración ERP — Dastions.com', 'ERP integration — Dastions.com')) +
       '<input type="hidden" name="asunto" value="' + L('Integración ERP', 'ERP integration') + '">' +
       '<div class="row2">' +
         '<div class="field"><label for="erp-nombre">' + LB_NAME + '</label><input id="erp-nombre" name="nombre" type="text" required autocomplete="name"></div>' +
@@ -369,7 +378,8 @@
     '<span class="eyebrow">' + L('Metrología · ENAC', 'Metrology · ENAC') + '</span>' +
     '<h2 class="h3" style="margin:.3rem 0 .5rem">' + L('Presupuesto de calibración y verificación', 'Calibration and verification quote') + '</h2>' +
     '<p style="color:var(--muted);font-size:.92rem;margin:0 0 1.3rem">' + L('Cuéntanos qué instrumentos quieres calibrar o verificar y su capacidad. Te preparamos un presupuesto y te llamamos.', 'Tell us which instruments you want to calibrate or verify and their capacity. We\'ll prepare a quote and call you.') + '</p>' +
-    '<form action="https://formspree.io/f/[FORMSPREE_ID]" method="POST">' +
+    '<form action="https://formsubmit.co/info@dastions.com" method="POST">' +
+      fsHidden(L('Calibración y verificación (ENAC) — Dastions.com', 'Calibration and verification (ENAC) — Dastions.com')) +
       '<input type="hidden" name="asunto" value="' + L('Calibración y verificación (ENAC)', 'Calibration and verification (ENAC)') + '">' +
       '<div class="row2">' +
         '<div class="field"><label for="cal-nombre">' + LB_NAME + '</label><input id="cal-nombre" name="nombre" type="text" required autocomplete="name"></div>' +
@@ -404,7 +414,8 @@
     '<span class="eyebrow">' + L('Básculas puente · Montaje', 'Weighbridges · Installation') + '</span>' +
     '<h2 class="h3" style="margin:.3rem 0 .5rem">' + L('Presupuesto de báscula de camiones', 'Truck weighbridge quote') + '</h2>' +
     '<p style="color:var(--muted);font-size:.92rem;margin:0 0 1.3rem">' + L('Diseño, obra civil, montaje y puesta en marcha llave en mano. Cuéntanos cómo la quieres y te preparamos un presupuesto.', 'Turnkey design, civil works, installation and commissioning. Tell us how you want it and we\'ll prepare a quote.') + '</p>' +
-    '<form action="https://formspree.io/f/[FORMSPREE_ID]" method="POST">' +
+    '<form action="https://formsubmit.co/info@dastions.com" method="POST">' +
+      fsHidden(L('Báscula puente de camiones — Dastions.com', 'Truck weighbridge — Dastions.com')) +
       '<input type="hidden" name="asunto" value="' + L('Báscula puente de camiones', 'Truck weighbridge') + '">' +
       '<div class="row2">' +
         '<div class="field"><label for="bas-nombre">' + LB_NAME + '</label><input id="bas-nombre" name="nombre" type="text" required autocomplete="name"></div>' +
