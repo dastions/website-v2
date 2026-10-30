@@ -150,6 +150,39 @@
     }
   };
 
+  // CAElink: kiosco de acceso con validación CAE (textos según idioma de la página)
+  var caeT = {
+    es: { idle: 'EN ESPERA', read: 'Leyendo DNI/NIE en el kiosco...', worker: 'Trabajador: ', company: 'Empresa: ', contract: 'Contrato activo: ', docsOk: 'Documentación en vigor', risks: 'Información de riesgos acusada (art. 4 RD 171/2004)', risksNo: 'Información de riesgos pendiente de acusar', inOk: 'ACCESO AUTORIZADO · bienvenida', inKo: 'ACCESO DENEGADO · pasar por portería', resOk: 'ACCESO AUTORIZADO', resKo: 'A PORTERÍA', log: 'Acceso registrado con trazabilidad ✓', ack: 'Acusada', pend: 'Pendiente' },
+    ca: { idle: 'EN ESPERA', read: 'Llegint DNI/NIE al quiosc...', worker: 'Treballador: ', company: 'Empresa: ', contract: 'Contracte actiu: ', docsOk: 'Documentació vigent', risks: 'Informació de riscos rebuda (art. 4 RD 171/2004)', risksNo: 'Informació de riscos pendent de confirmar', inOk: 'ACCÉS AUTORITZAT · benvinguda', inKo: 'ACCÉS DENEGAT · passar per consergeria', resOk: 'ACCÉS AUTORITZAT', resKo: 'A CONSERGERIA', log: 'Accés registrat amb traçabilitat ✓', ack: 'Confirmada', pend: 'Pendent' },
+    en: { idle: 'WAITING', read: 'Reading ID card at the kiosk...', worker: 'Worker: ', company: 'Company: ', contract: 'Active contract: ', docsOk: 'Documents in force', risks: 'Risk information acknowledged (art. 4 RD 171/2004)', risksNo: 'Risk information not yet acknowledged', inOk: 'ACCESS GRANTED · welcome', inKo: 'ACCESS DENIED · go to the gatehouse', resOk: 'ACCESS GRANTED', resKo: 'TO GATEHOUSE', log: 'Access logged with full traceability ✓', ack: 'Acknowledged', pend: 'Pending' }
+  };
+  var ct = caeT[(document.documentElement.lang || 'es').slice(0, 2)] || caeT.es;
+  scenarios.cae = {
+    idle: ct.idle,
+    fields: ['worker', 'company', 'contract', 'center', 'docs', 'risks'],
+    items: [
+      { worker: 'Laura Pérez', company: 'Mantenimientos Ebro S.L.', contract: { es: 'Mantenimiento eléctrico', ca: 'Manteniment elèctric', en: 'Electrical maintenance' }, center: 'Planta Tarragona', docs: '8/8', ok: true, ack: true },
+      { worker: 'Carlos Vidal', company: 'Limpiezas Costa Daurada', contract: { es: 'Limpieza industrial', ca: 'Neteja industrial', en: 'Industrial cleaning' }, center: 'Planta Tarragona', docs: { es: 'Seguro RC caducado', ca: 'Assegurança RC caducada', en: 'Liability insurance expired' }, ok: false, ack: true },
+      { worker: 'Jordi Puig', company: 'Montajes Camp S.L.', contract: { es: 'Trabajos en altura', ca: 'Treballs en alçada', en: 'Work at height' }, center: 'Almacén Reus', docs: '6/6', ok: false, ack: false },
+      { worker: 'Ana Soler', company: 'Transportes Montsant', contract: { es: 'Transporte', ca: 'Transport', en: 'Transport' }, center: 'Almacén Reus', docs: '5/5', ok: true, ack: true }
+    ],
+    steps: function (w, h) {
+      var lg = (document.documentElement.lang || 'es').slice(0, 2);
+      var tx = function (v) { return typeof v === 'string' ? v : (v[lg] || v.es); };
+      var docsOk = w.docs.indexOf && w.docs.indexOf('/') > 0;
+      return [
+        [300, function () { h.clear(); h.line('b', 'KIOSK', ct.read); }],
+        [700, function () { h.line('ok', 'CAE', ct.worker + w.worker); h.set('worker', w.worker); }],
+        [650, function () { h.line('txt', 'CAE', ct.company + w.company); h.set('company', w.company); }],
+        [700, function () { h.line('txt', 'CONTR', ct.contract + tx(w.contract) + ' · ' + w.center); h.set('contract', tx(w.contract)); h.set('center', w.center); }],
+        [750, function () { if (docsOk) { h.line('ok', 'DOCS', ct.docsOk + ' (' + w.docs + ')'); h.set('docs', w.docs + ' ✓'); } else { h.line('warn', 'DOCS', tx(w.docs)); h.set('docs', tx(w.docs), true); } }],
+        [700, function () { if (w.ack) { h.line('ok', 'PRL', ct.risks); h.set('risks', ct.ack); } else { h.line('warn', 'PRL', ct.risksNo); h.set('risks', ct.pend, true); } }],
+        [800, function () { if (w.ok) { h.line('ok', 'ACCESS', ct.inOk); h.result(ct.resOk, 'ok'); } else { h.line('warn', 'ACCESS', ct.inKo); h.result(ct.resKo, 'warn'); } }],
+        [750, function () { h.line(w.ok ? 'ok' : 'txt', 'LOG', ct.log); }]
+      ];
+    }
+  };
+
   [].slice.call(document.querySelectorAll('.agentsim')).forEach(function (sim) {
     var sc = scenarios[sim.getAttribute('data-sim') || 'pesaje'];
     if (!sc) return;
